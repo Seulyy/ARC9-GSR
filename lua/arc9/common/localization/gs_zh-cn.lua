@@ -711,16 +711,16 @@ L["go_stock_retract.printname"] = "可拆卸枪托"
 L["go_stock_retract.compactname"] = "可拆卸"
 L["go_stock_retract.description"] = "可拆卸枪托."
 
-L["go_stock_basilisk.printname"] = "Basilisk 枪托"
-L["go_stock_basilisk.compactname"] = "Basilisk"
+L["go_stock_basilisk.printname"] = "蝰蛇枪托"
+L["go_stock_basilisk.compactname"] = "蝰蛇"
 L["go_stock_basilisk.description"] = "重量极轻的起重枪托."
 
-L["go_stock_contractor.printname"] = "Contractor 枪托"
-L["go_stock_contractor.compactname"] = "Contractor"
+L["go_stock_contractor.printname"] = "承包商枪托"
+L["go_stock_contractor.compactname"] = "承包商"
 L["go_stock_contractor.description"] = "来自 M4A4 的可调节模块化枪托."
 
-L["go_stock_ergo.printname"] = "Ergonomic 枪托"
-L["go_stock_ergo.compactname"] = "Ergonomic"
+L["go_stock_ergo.printname"] = "人体工学枪托"
+L["go_stock_ergo.compactname"] = "人体工学"
 L["go_stock_ergo.description"] = "来自 SIG556 的轻型、符合人体工学的枪托."
 
 L["go_stock_moe.printname"] = "MOE 枪托"
@@ -1208,19 +1208,19 @@ L["csgo_deagle_mag_extend.description"] = string.format(quicktext.bigmag, 15)
 
 /////////////////// Beretta
 L["csgo_elite_slide_long.printname"] = "长滑轨和枪管"
-L["csgo_elite_slide_long.compactname"] = "L"
+L["csgo_elite_slide_long.compactname"] = "长"
 L["csgo_elite_slide_long.description"] = "更长的滑轨和枪管."
 
 L["csgo_elite_slide_short.printname"] = "短滑轨和枪管"
-L["csgo_elite_slide_short.compactname"] = "G"
+L["csgo_elite_slide_short.compactname"] = "短"
 L["csgo_elite_slide_short.description"] = "缩短的滑轨和枪管."
 
-L["csgo_elite_slide_p38.printname"] = "Officer 滑轨"
-L["csgo_elite_slide_p38.compactname"] = "Officer"
+L["csgo_elite_slide_p38.printname"] = "军官滑轨"
+L["csgo_elite_slide_p38.compactname"] = "军官"
 L["csgo_elite_slide_p38.description"] = "用定制的售后滑轨取代这个滑轨.\n与某个时代的另一种可疑枪支相似."
 
-L["csgo_elite_slide_raffica.printname"] = "Raffica 改装"
-L["csgo_elite_slide_raffica.compactname"] = "Raffica"
+L["csgo_elite_slide_raffica.printname"] = "拉菲卡改装"
+L["csgo_elite_slide_raffica.compactname"] = "拉菲卡"
 L["csgo_elite_slide_raffica.description"] = "改变武器开火模式为 <color=100,255,100>3 连发</color> 并增加了前握把和补偿器，以帮助控制后坐力." .. "\n\n[ 不兼容 <color=255,100,100>枪口制动器</color> ]"
 
 L["csgo_elite_mag_24.printname"] = "24-Round 9×19mm 弹匣"
@@ -1869,8 +1869,8 @@ L["csgo_ump_mag_30.compactname"] = ".45 ACP+"
 L["csgo_ump_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
 /////////////////// USP-S
-L["csgo_usp_slide_long.printname"] = "Elite 滑轨和枪管"
-L["csgo_usp_slide_long.compactname"] = "Elite"
+L["csgo_usp_slide_long.printname"] = "精英 滑轨和枪管"
+L["csgo_usp_slide_long.compactname"] = "精英"
 L["csgo_usp_slide_long.description"] = "扩展的滑轨和枪管."
 
 L["csgo_usp_slide_short.printname"] = "USP-C 滑轨和枪管"
@@ -2429,8 +2429,8 @@ L["csgo_dual_p250_mag_20.printname"] = ARC9:GetPhrase("csgo_p2000_mag_20.printna
 L["csgo_dual_p250_mag_20.compactname"] = ARC9:GetPhrase("csgo_p2000_mag_20.compactname") or "9mm+"
 L["csgo_dual_p250_mag_20.description"] = ARC9:GetPhrase("csgo_p2000_mag_20.description") or string.format(quicktext.bigmag, 20)
 
-L["csgo_dual_usp_slide_long.printname"] = ARC9:GetPhrase("csgo_usp_slide_long.printname") or "Elite 滑轨和枪管"
-L["csgo_dual_usp_slide_long.compactname"] = ARC9:GetPhrase("csgo_usp_slide_long.compactname") or "Elite"
+L["csgo_dual_usp_slide_long.printname"] = ARC9:GetPhrase("csgo_usp_slide_long.printname") or "精英 滑轨和枪管"
+L["csgo_dual_usp_slide_long.compactname"] = ARC9:GetPhrase("csgo_usp_slide_long.compactname") or "精英"
 L["csgo_dual_usp_slide_long.description"] = ARC9:GetPhrase("csgo_usp_slide_long.description") or "扩展的滑轨和枪管."
 
 L["csgo_dual_usp_mag_18.printname"] = ARC9:GetPhrase("csgo_usp_mag_18.printname") or "18-Round .45 ACP 弹匣"
