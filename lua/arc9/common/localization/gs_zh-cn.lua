@@ -1,6 +1,6 @@
 L = {} -- Simplified Chinese strings by WhatUziname7
 
-IncludeCS("cs2strings/wpnstring-" .. "zh-tw" .. ".lua")
+IncludeCS("cs2strings/wpnstring-" .. "zh-cn" .. ".lua")
 
 ////////////////////////////////////// Trivia
 /////////////////// Country of Origin
@@ -57,6 +57,15 @@ L["csgo_trivia_year"] = "年份6"
 L["csgo_trivia_authors"] = "作者"
 L["csgo_trivia_assets"] = "资产"
 
+/////////////////// TO BE REMOVED - DO NOT TRANSLATE
+L["csgo_trivia_mechanism"] = "机制"
+L["csgo_trivia_weight_loaded"] = "重量 (装载)"
+L["csgo_trivia_muzzle_velocity"] = "射速"
+L["csgo_trivia_muzzle_energy"] = "枪口力量"
+L["csgo_trivia_designer"] = "设计者"
+L["csgo_trivia_explosive_mass"] = "爆炸物质量"
+L["csgo_trivia_explosive_type"] = "爆炸物类型"
+
 /////////////////// Firing Modes
 L["csgo_firemode_both"] = "两者"
 L["csgo_firemode_melee"] = "近战"
@@ -67,6 +76,17 @@ L["csgo_firemode_plantable"] = "放置"
 L["csgo_firemode_sil"] = "开"
 L["csgo_firemode_nosil"] = "关"
 
+/////////////////// (Old) 武器 Categories
+L["csgo_category_weapon_akimbo"] = "双持武器"
+L["csgo_category_weapon_ar"] = "突击步枪"
+L["csgo_category_weapon_extra"] = "额外武器"
+L["csgo_category_weapon_lmg"] = "轻机枪"
+L["csgo_category_weapon_melee"] = "近战武器"
+L["csgo_category_weapon_pistol"] = "手枪"
+L["csgo_category_weapon_shotgun"] = "霰弹枪"
+L["csgo_category_weapon_sniper"] = "狙击步枪"
+L["csgo_category_weapon_smg"] = "冲锋枪"
+
 /////////////////// 武器 Categories
 L["csgo_category_slot_0"] = "0双持武器"
 L["csgo_category_slot_1"] = "1" .. csstring["cat_pistols"]
@@ -76,7 +96,7 @@ L["csgo_category_slot_4"] = "4" .. csstring["cat_rifles"]
 L["csgo_category_slot_5"] = "5" .. csstring["cat_gear"]
 L["csgo_category_slot_6"] = "6" .. csstring["cat_grenades"]
 
-/////////////////// Weapon Classes
+/////////////////// 武器 Classes
 L["csgo_class_weapon_ar"] = "突击步枪"
 L["csgo_class_weapon_lmg"] = "轻机枪"
 L["csgo_class_weapon_melee"] = "近战"
@@ -94,8 +114,8 @@ L["csgo_class_weapon_throwable"] = "投掷物"
 L["csgo_class_weapon_grenade"] = "手雷"
 L["csgo_class_weapon_special"] = "特殊"
 
-////////////////////////////////////// Weapons
-/////////////////// Weapon Display Names
+////////////////////////////////////// 武器s
+/////////////////// 武器 Display Names
 L["csgo_weapon_ak47"] = csstring["ak47"].name
 L["csgo_weapon_aug"] = csstring["aug"].name
 L["csgo_weapon_awp"] = csstring["awp"].name
@@ -180,7 +200,7 @@ L["csgo_weapon_usp"] = csstring["usp_silencer"].name
 L["csgo_weapon_xm1014"] = csstring["xm1014"].name
 L["csgo_weapon_zeus"] = csstring["taser"].name
 
-/////////////////// Weapon Descriptions
+/////////////////// 武器 Descriptions
 
 local customdesc = {
 	m4a1s = "\n当 <color=255,255,100>未装消音器时</color>: 提高 <color=100,255,100>射速</color> 和 <color=255,100,100>散射</color>.",
@@ -252,7 +272,7 @@ L["csgo_description_usp"] = csstring["usp_silencer_use"] .. csstring["usp_silenc
 L["csgo_description_xm1014"] = csstring["xm1014_use"] .. csstring["xm1014"].desc
 L["csgo_description_zeus"] = csstring["taser_use"] .. csstring["taser"].desc
 
-/////////////////// Unofficial Weapon Names
+/////////////////// Unofficial 武器 Names
 L["csgo_weapon_akimbo_cz75"] = "双持 CZ75-自动"
 L["csgo_weapon_akimbo_deagle"] = "双持 沙漠之鹰"
 L["csgo_weapon_akimbo_fiveseven"] = "双持 Five-SeveN"
@@ -279,7 +299,7 @@ L["csgo_weapon_nade_rock"] = "石头"
 L["csgo_weapon_scar17"] = "SCAR-17"
 L["csgo_weapon_scout"] = "Scout"
 
--- /////////////////// Custom Weapon Names
+/////////////////// 定制 武器 Names
 L["csgo_weapon_ak47_rpk"] = "RPK"
 L["csgo_weapon_ak47_ak74"] = "AK-74"
 L["csgo_weapon_ak47_rpk74"] = "RPK-74"
@@ -329,7 +349,7 @@ L["csgo_weapon_ump_9"] = "UMP-9"
 L["csgo_weapon_ump_usc"] = "USC-45"
 L["csgo_weapon_ump_usc_9"] = "USC-9"
 
-/////////////////// Unofficial Weapon Descriptions
+/////////////////// Unofficial 武器 Descriptions
 L["csgo_description_akimbo_cz75"] = "一对自动手枪。它的低射速使其成为一种全面的自动手枪选择."
 L["csgo_description_akimbo_deagle"] = "两支非常昂贵但威力巨大的沙漠之鹰，每只手各一支，让使用者在开火时不仅能折断手腕，还能在瞄准的目标上打出一个大洞."
 L["csgo_description_akimbo_fiveseven"] = "价格昂贵的 Five-Seven 准确度高、穿甲能力强，但装弹速度慢，20 发弹匣容量大，后坐力小。"
@@ -646,7 +666,7 @@ L["go_grip_gripod.description"] = "带内置两脚架的定制前握把."
 
 L["go_grip_kac.printname"] = "粗短的前握把"
 L["go_grip_kac.compactname"] = "粗短"
-L["go_grip_kac.description"] = "轻质前握把，尽可能减轻重量."
+L["go_grip_kac.description"] = "轻型前握把，尽可能减轻重量."
 
 L["go_grip_laser.printname"] = "点射前握把"
 L["go_grip_laser.compactname"] = "P.S.F."
@@ -691,17 +711,17 @@ L["go_stock_retract.printname"] = "可拆卸枪托"
 L["go_stock_retract.compactname"] = "可拆卸"
 L["go_stock_retract.description"] = "可拆卸枪托."
 
-L["go_stock_basilisk.printname"] = "Basilisk 枪托"
-L["go_stock_basilisk.compactname"] = "Basilisk"
+L["go_stock_basilisk.printname"] = "蝰蛇枪托"
+L["go_stock_basilisk.compactname"] = "蝰蛇"
 L["go_stock_basilisk.description"] = "重量极轻的起重枪托."
 
-L["go_stock_contractor.printname"] = "Contractor 枪托"
-L["go_stock_contractor.compactname"] = "Contractor"
+L["go_stock_contractor.printname"] = "承包商枪托"
+L["go_stock_contractor.compactname"] = "承包商"
 L["go_stock_contractor.description"] = "来自 M4A4 的可调节模块化枪托."
 
-L["go_stock_ergo.printname"] = "Ergonomic 枪托"
-L["go_stock_ergo.compactname"] = "Ergonomic"
-L["go_stock_ergo.description"] = "来自 SIG556 的轻质、符合人体工学的枪托."
+L["go_stock_ergo.printname"] = "人体工学枪托"
+L["go_stock_ergo.compactname"] = "人体工学"
+L["go_stock_ergo.description"] = "来自 SIG556 的轻型、符合人体工学的枪托."
 
 L["go_stock_moe.printname"] = "MOE 枪托"
 L["go_stock_moe.compactname"] = "MOE"
@@ -999,9 +1019,9 @@ L["go_ubgl_xm1014.description"] = "安装下置式半自动霰弹枪."
 ////////////////////////////////////// 武器 Specific Attachments
 /////////////////// Universal
 -- Appears to be unused?
--- L["csgo_barrel_short.printname"] = "Short 枪管"
+-- L["csgo_barrel_short.printname"] = "短枪管"
 -- L["csgo_barrel_short.compactname"] = "Short"
--- L["csgo_barrel_short.description"] = "缩短的barrel that improves weapon handling at the cost of recoil control."
+-- L["csgo_barrel_short.description"] = "缩短的枪管 that improves weapon handling at the cost of recoil control."
 
 L["csgo_pistols_view.printname"] = "次要视角"
 L["csgo_pistols_view.compactname"] = "次要视角"
@@ -1028,27 +1048,27 @@ L["csgo_ak47_mag_50.description"] = string.format(quicktext.drummag, 50)
 
 L["csgo_ak47_barrel_long.printname"] = "RPK 枪管"
 L["csgo_ak47_barrel_long.compactname"] = "RPK"
-L["csgo_ak47_barrel_long.description"] = "Longer barrel used on the RPK."
+L["csgo_ak47_barrel_long.description"] = "RPK 步枪上使用的加长枪管."
 
-L["csgo_ak47_barrel_short.printname"] = "Ukorochenniy 枪管"
+L["csgo_ak47_barrel_short.printname"] = "乌科罗切尼枪管"
 L["csgo_ak47_barrel_short.compactname"] = "U"
-L["csgo_ak47_barrel_short.description"] = "Short barrel used on the AKS-74U."
+L["csgo_ak47_barrel_short.description"] = "AKS-74U 上使用的短枪管."
 
-L["csgo_ak47_barrel_tactical.printname"] = "Tactical Spetsnaz 枪管"
+L["csgo_ak47_barrel_tactical.printname"] = "战术特种兵枪管"
 L["csgo_ak47_barrel_tactical.compactname"] = "TS"
-L["csgo_ak47_barrel_tactical.description"] = "Tactical handguard with built-in picatinny rails."
+L["csgo_ak47_barrel_tactical.description"] = "战术护手，内置皮卡汀尼导轨."
 
-L["csgo_ak47_grip_tactical.printname"] = "Tactical 手枪 Grip"
-L["csgo_ak47_grip_tactical.compactname"] = "Tactical"
-L["csgo_ak47_grip_tactical.description"] = "Replaces the wooden pistol grip with a plastic one for improved ergonomics."
+L["csgo_ak47_grip_tactical.printname"] = "战术手枪握把"
+L["csgo_ak47_grip_tactical.compactname"] = "战术手枪握把"
+L["csgo_ak47_grip_tactical.description"] = "用塑料握把取代木质手枪握把，更符合人体工学功能原理."
 
 L["csgo_ak47_stock_rpk.printname"] = "RPK 枪托"
 L["csgo_ak47_stock_rpk.compactname"] = "RPK"
-L["csgo_ak47_stock_rpk.description"] = "Heavy RPK stock."
+L["csgo_ak47_stock_rpk.description"] = "重型 RPK 枪托."
 
-L["csgo_ak47_stock_skeleton.printname"] = "Skeleton 枪托"
-L["csgo_ak47_stock_skeleton.compactname"] = "Skeleton"
-L["csgo_ak47_stock_skeleton.description"] = "Lightweight skeleton stock."
+L["csgo_ak47_stock_skeleton.printname"] = "镂空枪托"
+L["csgo_ak47_stock_skeleton.compactname"] = "镂空枪托"
+L["csgo_ak47_stock_skeleton.description"] = "轻型镂空枪托."
 
 L["csgo_ak47_mag_556.printname"] = "30-Round 5.56×45mm 弹匣"
 L["csgo_ak47_mag_556.compactname"] = "5.56mm"
@@ -1069,48 +1089,48 @@ L["csgo_ak47_mag_545_ext.description"] = "让 AK-47 使用 5.45x39 弹匣和弹�
 /////////////////// AUG
 L["csgo_aug_mag_1.printname"] = "25-Round 9×19mm 弹匣"
 L["csgo_aug_mag_1.compactname"] = "9mm"
-L["csgo_aug_mag_1.description"] = "让 AUG into the AUG Para using a 9×19mm magazine adapter.\n" .. string.format(quicktext.smallmag, 25)
+L["csgo_aug_mag_1.description"] = "让 AUG 使用 9×19 毫米弹匣适配器装入 AUG Para.\n" .. string.format(quicktext.smallmag, 25)
 
 L["csgo_aug_mag_2.printname"] = "32-Round 9×19mm 弹匣"
 L["csgo_aug_mag_2.compactname"] = "9mm+"
-L["csgo_aug_mag_2.description"] = "让 AUG into the AUG Para using a 9×19mm magazine adapter.\n" .. string.format(quicktext.bigmag, 32)
+L["csgo_aug_mag_2.description"] = "让 AUG 使用 9×19 毫米弹匣适配器装入 AUG Para.\n" .. string.format(quicktext.bigmag, 32)
 
 L["csgo_aug_mag_40.printname"] = "40-Round 5.56×45mm 弹匣"
 L["csgo_aug_mag_40.compactname"] = "5.56mm+"
 L["csgo_aug_mag_40.description"] = string.format(quicktext.bigmag, 40)
 
-L["csgo_aug_barrel_long.printname"] = "Heavy 枪管"
-L["csgo_aug_barrel_long.compactname"] = "Heavy"
-L["csgo_aug_barrel_long.description"] = "Longer barrel used on the AUG HBAR."
+L["csgo_aug_barrel_long.printname"] = "重型枪管"
+L["csgo_aug_barrel_long.compactname"] = "重型枪管"
+L["csgo_aug_barrel_long.description"] = "AUG HBAR 上使用的加长枪管."
 
 L["csgo_aug_barrel_short.printname"] = "Para 枪管"
 L["csgo_aug_barrel_short.compactname"] = "Para"
-L["csgo_aug_barrel_short.description"] = "Shorter barrel used on the AUG Para."
+L["csgo_aug_barrel_short.description"] = "在 AUG Para 上使用的短枪管."
 
-L["csgo_grip_no.printname"] = "Remove Grip"
-L["csgo_grip_no.compactname"] = "Remove"
-L["csgo_grip_no.description"] = "Removes the front grip."
+L["csgo_grip_no.printname"] = "移除握把"
+L["csgo_grip_no.compactname"] = "移除握把"
+L["csgo_grip_no.description"] = "拆除前握把."
 
 /////////////////// AWP
-L["csgo_awp_barrel_bull.printname"] = "Bull 枪管"
-L["csgo_awp_barrel_bull.compactname"] = "Bull"
-L["csgo_awp_barrel_bull.description"] = "Aggressive Bull barrel."
+L["csgo_awp_barrel_bull.printname"] = "公牛枪管"
+L["csgo_awp_barrel_bull.compactname"] = "公牛枪管"
+L["csgo_awp_barrel_bull.description"] = "咄咄逼人的公牛枪管."
 
-L["csgo_awp_barrel_short.printname"] = "Short 枪管"
-L["csgo_awp_barrel_short.compactname"] = "Short"
-L["csgo_awp_barrel_short.description"] = "缩短的aftermarket barrel."
+L["csgo_awp_barrel_short.printname"] = "短枪管"
+L["csgo_awp_barrel_short.compactname"] = "短枪管"
+L["csgo_awp_barrel_short.description"] = "缩短的售后枪管."
 
-L["csgo_awp_barrel_factory.printname"] = "Factory 枪管"
-L["csgo_awp_barrel_factory.compactname"] = "Factory"
-L["csgo_awp_barrel_factory.description"] = "Factory-made barrel."
+L["csgo_awp_barrel_factory.printname"] = "工厂枪管"
+L["csgo_awp_barrel_factory.compactname"] = "工厂枪管"
+L["csgo_awp_barrel_factory.description"] = "工厂制造的枪管."
 
-L["csgo_awp_stock_folding.printname"] = "Adjustable 枪托"
-L["csgo_awp_stock_folding.compactname"] = "Adjustable"
-L["csgo_awp_stock_folding.description"] = "Adjustable stock."
+L["csgo_awp_stock_folding.printname"] = "可调节枪托"
+L["csgo_awp_stock_folding.compactname"] = "可调节枪托"
+L["csgo_awp_stock_folding.description"] = "可调节枪托."
 
 L["csgo_awp_stock_obrez.printname"] = "Obrez 枪托"
 L["csgo_awp_stock_obrez.compactname"] = "Obrez"
-L["csgo_awp_stock_obrez.description"] = "Cuts off the stock."
+L["csgo_awp_stock_obrez.description"] = "切断托."
 
 L["csgo_awp_mag_15.printname"] = "15-Round .338 拉普马格南 弹匣"
 L["csgo_awp_mag_15.compactname"] = ".338+"
@@ -1120,18 +1140,18 @@ L["csgo_awp_mag_5.printname"] = "5-Round .338 拉普马格南 弹匣"
 L["csgo_awp_mag_5.compactname"] = ".338-"
 L["csgo_awp_mag_5.description"] = string.format(quicktext.smallmag, 5)
 
-L["csgo_awp_sight_iron.printname"] = "Iron 瞄准镜s"
-L["csgo_awp_sight_iron.compactname"] = "Irons"
-L["csgo_awp_sight_iron.description"] = "Aftermarket iron sights."
+L["csgo_awp_sight_iron.printname"] = "铁瞄准镜"
+L["csgo_awp_sight_iron.compactname"] = "铁瞄准镜"
+L["csgo_awp_sight_iron.description"] = "售后铁瞄准镜."
 
 /////////////////// PP-Bizon
 L["csgo_bizon_barrel_long.printname"] = "GRU 枪管"
 L["csgo_bizon_barrel_long.compactname"] = "GRU"
-L["csgo_bizon_barrel_long.description"] = "定制 long barrel and heat shield."
+L["csgo_bizon_barrel_long.description"] = "定制长枪管和隔热罩."
 
 L["csgo_bizon_barrel_mid.printname"] = "FSB 枪管"
 L["csgo_bizon_barrel_mid.compactname"] = "FSB"
-L["csgo_bizon_barrel_mid.description"] = "定制 mid-sized barrel."
+L["csgo_bizon_barrel_mid.description"] = "定制中型枪管."
 
 L["csgo_bizon_mag_47.printname"] = "47-Round 9×19mm Helical 弹匣"
 L["csgo_bizon_mag_47.compactname"] = "9mm-"
@@ -1143,7 +1163,7 @@ L["csgo_bizon_mag_82.description"] = string.format(quicktext.bigmag, 82)
 
 L["csgo_bizon_mag_saiga.printname"] = "30-Round 9×19mm Saiga 弹匣"
 L["csgo_bizon_mag_saiga.compactname"] = "Saiga"
-L["csgo_bizon_mag_saiga.description"] = "Attaches a traditional magwell which accepts a standard, lower capacity magazine holding <color=255,100,100>30 rounds</color>."
+L["csgo_bizon_mag_saiga.description"] = "可安装传统弹匣井，接受 <color=255,100,100>30 发子弹</color>的标准低容量弹匣."
 
 L["csgo_bizon_hold_2.printname"] = "次要握持类型 II"
 L["csgo_bizon_hold_2.compactname"] = "次要握持 II"
@@ -1151,15 +1171,15 @@ L["csgo_bizon_hold_2.compactname"] = "次要握持 II"
 /////////////////// CZ75-自动
 L["csgo_cz_slide_long.printname"] = "CZ-L 滑轨和枪管"
 L["csgo_cz_slide_long.compactname"] = "CZ-L"
-L["csgo_cz_slide_long.description"] = "Slightly longer 滑轨和枪管 with the built-in muzzle brake removed."
+L["csgo_cz_slide_long.description"] = "略长的滑轨和枪管，去掉内置枪口制动器."
 
 L["csgo_cz_slide_short.printname"] = "CZ-C 滑轨和枪管"
 L["csgo_cz_slide_short.compactname"] = "CZ-C"
-L["csgo_cz_slide_short.description"] = "Shortest 滑轨和枪管 available."
+L["csgo_cz_slide_short.description"] = "现有最短的滑轨和枪管."
 
 L["csgo_cz_slide_factory.printname"] = "CZ-A 枪管"
 L["csgo_cz_slide_factory.compactname"] = "CZ-A"
-L["csgo_cz_slide_factory.description"] = "缩短的barrel with the built-in muzzle brake removed."
+L["csgo_cz_slide_factory.description"] = "缩短的枪管，去掉内置枪口制动器."
 
 L["csgo_cz_mag_ext.printname"] = "18-Round 9×19mm 弹匣"
 L["csgo_cz_mag_ext.compactname"] = "9mm+"
@@ -1168,39 +1188,39 @@ L["csgo_cz_mag_ext.description"] = string.format(quicktext.bigmag, 18)
 /////////////////// 沙漠之鹰
 L["csgo_deagle_s.printname"] = "沙漠之鹰 消音器"
 L["csgo_deagle_s.compactname"] = "DE Supp."
-L["csgo_deagle_s.description"] = "A suppressor designed specifically for the 沙漠之鹰.\nDesigned to reduce the decibel level from gunshots."
+L["csgo_deagle_s.description"] = "专为沙漠之鹰设计的消音器.\n专为降低枪声分贝而设计."
 
-L["csgo_deagle_c.printname"] = "Compensator"
+L["csgo_deagle_c.printname"] = "补偿器"
 L["csgo_deagle_c.compactname"] = "Comp."
-L["csgo_deagle_c.description"] = "特殊 compensator that reduce side-to-side recoil."
+L["csgo_deagle_c.description"] = "减少侧向后坐力的特殊补偿器."
 
-L["csgo_deagle_c_2.printname"] = "Long Compensator"
+L["csgo_deagle_c_2.printname"] = "长形补偿器"
 L["csgo_deagle_c_2.compactname"] = "L-Comp."
-L["csgo_deagle_c_2.description"] = "Even bigger special compensator 可减少侧向后坐力."
+L["csgo_deagle_c_2.description"] = "更大的特殊补偿器 可减少侧向后坐力."
 
-L["csgo_deagle_barrel.printname"] = "Long 枪管"
-L["csgo_deagle_barrel.compactname"] = "Long"
-L["csgo_deagle_barrel.description"] = "Factory-made long barrel."
+L["csgo_deagle_barrel.printname"] = "长枪管"
+L["csgo_deagle_barrel.compactname"] = "长枪管"
+L["csgo_deagle_barrel.description"] = "工厂制造的长枪管."
 
 L["csgo_deagle_mag_extend.printname"] = "15-Round .50 Action Express 弹匣"
 L["csgo_deagle_mag_extend.compactname"] = ".50 AE+"
 L["csgo_deagle_mag_extend.description"] = string.format(quicktext.bigmag, 15)
 
 /////////////////// Beretta
-L["csgo_elite_slide_long.printname"] = "L 滑轨和枪管"
-L["csgo_elite_slide_long.compactname"] = "L"
+L["csgo_elite_slide_long.printname"] = "长滑轨和枪管"
+L["csgo_elite_slide_long.compactname"] = "长"
 L["csgo_elite_slide_long.description"] = "更长的滑轨和枪管."
 
-L["csgo_elite_slide_short.printname"] = "G 滑轨和枪管"
-L["csgo_elite_slide_short.compactname"] = "G"
+L["csgo_elite_slide_short.printname"] = "短滑轨和枪管"
+L["csgo_elite_slide_short.compactname"] = "短"
 L["csgo_elite_slide_short.description"] = "缩短的滑轨和枪管."
 
-L["csgo_elite_slide_p38.printname"] = "Officer 滑轨"
-L["csgo_elite_slide_p38.compactname"] = "Officer"
+L["csgo_elite_slide_p38.printname"] = "军官滑轨"
+L["csgo_elite_slide_p38.compactname"] = "军官"
 L["csgo_elite_slide_p38.description"] = "用定制的售后滑轨取代这个滑轨.\n与某个时代的另一种可疑枪支相似."
 
-L["csgo_elite_slide_raffica.printname"] = "Raffica 改装"
-L["csgo_elite_slide_raffica.compactname"] = "Raffica"
+L["csgo_elite_slide_raffica.printname"] = "拉菲卡改装"
+L["csgo_elite_slide_raffica.compactname"] = "拉菲卡"
 L["csgo_elite_slide_raffica.description"] = "改变武器开火模式为 <color=100,255,100>3 连发</color> 并增加了前握把和补偿器，以帮助控制后坐力." .. "\n\n[ 不兼容 <color=255,100,100>枪口制动器</color> ]"
 
 L["csgo_elite_mag_24.printname"] = "24-Round 9×19mm 弹匣"
@@ -1212,11 +1232,11 @@ L["csgo_dual_elite_slide_raffica.description"] = "改变武器开火模式为 <c
 /////////////////// FAMAS
 L["csgo_famas_barrel_long.printname"] = "Tireur 枪管"
 L["csgo_famas_barrel_long.compactname"] = "Tireur"
-L["csgo_famas_barrel_long.description"] = "定制 marksman barrel."
+L["csgo_famas_barrel_long.description"] = "定制长枪管."
 
 L["csgo_famas_barrel_short.printname"] = "Raider 枪管"
 L["csgo_famas_barrel_short.compactname"] = "Raider"
-L["csgo_famas_barrel_short.description"] = "缩短的barrel."
+L["csgo_famas_barrel_short.description"] = "缩短的枪管."
 
 L["csgo_famas_mag_30.printname"] = "30-Round 5.56×45mm 弹匣"
 L["csgo_famas_mag_30.compactname"] = "5.56mm+"
@@ -1240,19 +1260,19 @@ L["csgo_five_mag_30.description"] = string.format(quicktext.bigmag, 30)
 /////////////////// G3SG1
 L["csgo_g3_barrel_sd.printname"] = "Whisper 枪管"
 L["csgo_g3_barrel_sd.compactname"] = "Whisper"
-L["csgo_g3_barrel_sd.description"] = "Medium-length barrel with integrated suppressor.\nReduces the decibel level from gunshots."
+L["csgo_g3_barrel_sd.description"] = "集成消音器的中长枪管.\n降低枪声的分贝水平."
 
 L["csgo_g3_barrel_g3a3.printname"] = "G3A3 枪管"
 L["csgo_g3_barrel_g3a3.compactname"] = "A3"
-L["csgo_g3_barrel_g3a3.description"] = "Medium-length barrel from the G3A3."
+L["csgo_g3_barrel_g3a3.description"] = "来自 G3A3 的中长枪管."
 
 L["csgo_g3_barrel_medium.printname"] = "G3KA4 枪管"
 L["csgo_g3_barrel_medium.compactname"] = "KA4"
-L["csgo_g3_barrel_medium.description"] = "Medium-length barrel from the G3KA4."
+L["csgo_g3_barrel_medium.description"] = "来自 G3KA4 的中长枪管."
 
-L["csgo_g3_barrel_short.printname"] = "Kurz 枪管"
-L["csgo_g3_barrel_short.compactname"] = "Kurz"
-L["csgo_g3_barrel_short.description"] = "缩短的G3KA4 barrel."
+L["csgo_g3_barrel_short.printname"] = "库尔兹枪管"
+L["csgo_g3_barrel_short.compactname"] = "库尔兹"
+L["csgo_g3_barrel_short.description"] = "缩短的 G3KA4 枪管."
 
 L["csgo_g3_mag_30.printname"] = "30-Round 7.62×51mm 弹匣"
 L["csgo_g3_mag_30.compactname"] = "7.62mm+"
@@ -1262,17 +1282,17 @@ L["csgo_g3_mag_10.printname"] = "10-Round 7.62×51mm 弹匣"
 L["csgo_g3_mag_10.compactname"] = "7.62mm-"
 L["csgo_g3_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
-L["csgo_g3_stock_collapsed.printname"] = "Collapsible 枪托"
-L["csgo_g3_stock_collapsed.compactname"] = "Collapsible"
-L["csgo_g3_stock_collapsed.description"] = "Retractable G3 stock."
+L["csgo_g3_stock_collapsed.printname"] = "可折叠枪托"
+L["csgo_g3_stock_collapsed.compactname"] = "可折叠枪托"
+L["csgo_g3_stock_collapsed.description"] = "可伸缩 G3 枪托."
 
 L["csgo_g3_stock_padded.printname"] = "Cheek Riser"
 L["csgo_g3_stock_padded.compactname"] = "Cheek R."
-L["csgo_g3_stock_padded.description"] = "Standard stock with attached cheek riser."
+L["csgo_g3_stock_padded.description"] = "标准枪托，附有托腮板."
 
-L["csgo_g3_stock_fixed.printname"] = "Fixed A2 枪托"
+L["csgo_g3_stock_fixed.printname"] = "固定式 A2 枪托"
 L["csgo_g3_stock_fixed.compactname"] = "Fixed A2"
-L["csgo_g3_stock_fixed.description"] = "Fixed shortened stock."
+L["csgo_g3_stock_fixed.description"] = "固定缩短的枪托."
 
 -- Fully 自动matic Attachments
 L["csgo_g3_mag_30_auto.printname"] = "30-Round 7.62×51mm 弹匣 [<color=100,175,100>自动</color>]"
@@ -1320,13 +1340,13 @@ L["csgo_g3_mag_40_mp9.compactname"] = "9mm"
 L["csgo_g3_mag_40_mp9.description"] = "将武器改装为使用 9×19mm 弹匣，并使其开火模式改为 <color=100,255,100>全自动</color>."
 
 /////////////////// 加利尔 SAR
-L["csgo_galil_barrel_long.printname"] = "Long 枪管"
-L["csgo_galil_barrel_long.compactname"] = "Long"
-L["csgo_galil_barrel_long.description"] = "Long marksman barrel."
+L["csgo_galil_barrel_long.printname"] = "长枪管"
+L["csgo_galil_barrel_long.compactname"] = "长枪管"
+L["csgo_galil_barrel_long.description"] = "长枪管."
 
-L["csgo_galil_barrel_short.printname"] = "Short 枪管"
-L["csgo_galil_barrel_short.compactname"] = "Short"
-L["csgo_galil_barrel_short.description"] = "缩短的CQB barrel."
+L["csgo_galil_barrel_short.printname"] = "短枪管"
+L["csgo_galil_barrel_short.compactname"] = "短枪管"
+L["csgo_galil_barrel_short.description"] = "缩短的CQB枪管."
 
 L["csgo_galil_mag_35.printname"] = "35-Round 5.56×45mm 弹匣"
 L["csgo_galil_mag_35.compactname"] = "5.56mm+"
@@ -1338,28 +1358,28 @@ L["csgo_galil_mag_50.description"] = string.format(quicktext.drummag, 50)
 
 L["csgo_galil_mag_ak_30.printname"] = "30-Round 7.62×39mm Polymer 弹匣"
 L["csgo_galil_mag_ak_30.compactname"] = "7.62mm"
-L["csgo_galil_mag_ak_30.description"] = "让 加利尔 to accept AK 弹匣."
+L["csgo_galil_mag_ak_30.description"] = "让加利尔使用 AK 弹匣."
 
 L["csgo_galil_mag_ak_40.printname"] = "40-Round 7.62×39mm Polymer 弹匣"
 L["csgo_galil_mag_ak_40.compactname"] = "7.62mm+"
-L["csgo_galil_mag_ak_40.description"] = "让 加利尔 to accept AK 弹匣.\n" .. string.format(quicktext.bigmag, 40)
+L["csgo_galil_mag_ak_40.description"] = "让加利尔使用 AK 弹匣.\n" .. string.format(quicktext.bigmag, 40)
 
 /////////////////// 加利尔 AR
 L["csgo_galilar_barrel_long.printname"] = "SAW 枪管"
 L["csgo_galilar_barrel_long.compactname"] = "SAW"
-L["csgo_galilar_barrel_long.description"] = "Longer barrel."
+L["csgo_galilar_barrel_long.description"] = "长枪管."
 
-L["csgo_galilar_barrel_short.printname"] = "Navy 枪管"
-L["csgo_galilar_barrel_short.compactname"] = "Navy"
-L["csgo_galilar_barrel_short.description"] = "缩短的barrel."
+L["csgo_galilar_barrel_short.printname"] = "海军枪管"
+L["csgo_galilar_barrel_short.compactname"] = "海军枪管"
+L["csgo_galilar_barrel_short.description"] = "缩短的管."
 
-L["csgo_galilar_barrel_factory.printname"] = "Carbine 枪管"
-L["csgo_galilar_barrel_factory.compactname"] = "Carbine"
-L["csgo_galilar_barrel_factory.description"] = "Factory-made short barrel."
+L["csgo_galilar_barrel_factory.printname"] = "卡宾枪枪管"
+L["csgo_galilar_barrel_factory.compactname"] = "卡宾枪枪管"
+L["csgo_galilar_barrel_factory.description"] = "工厂制造的短枪管."
 
-L["csgo_galilar_mag_ak_30.description"] = "让 加利尔 AR to accept AK 弹匣."
+L["csgo_galilar_mag_ak_30.description"] = "让加利尔 AR 使用 AK 弹匣."
 
-L["csgo_galilar_mag_ak_45.description"] = "让 加利尔 AR to accept AK 弹匣.\n" .. string.format(quicktext.bigmag, 40)
+L["csgo_galilar_mag_ak_45.description"] = "让加利尔 AR 使用 AK 弹匣.\n" .. string.format(quicktext.bigmag, 40)
 
 L["csgo_galilar_mag_30.printname"] = "30-Round 5.56×45mm 弹匣"
 L["csgo_galilar_mag_30.compactname"] = "5.56mm+"
@@ -1376,42 +1396,42 @@ L["csgo_galilar_mag_60.description"] = string.format(quicktext.bigmag, 60)
 /////////////////// 格洛克-18
 L["csgo_glock_slide_long.printname"] = "扩展的滑轨和枪管"
 L["csgo_glock_slide_long.compactname"] = "扩展"
-L["csgo_glock_slide_long.description"] = "Extends the barrel."
+L["csgo_glock_slide_long.description"] = "扩展枪管."
 
-L["csgo_glock_slide_auto.printname"] = "自动matic Conversion"
+L["csgo_glock_slide_auto.printname"] = "自动转换器"
 L["csgo_glock_slide_auto.compactname"] = "自动"
-L["csgo_glock_slide_auto.description"] = "让 格洛克-18 to the 格洛克-18C, making it <color=100,255,100>全自动</color>."
+L["csgo_glock_slide_auto.description"] = "把格洛克-18变成格洛克-18C，使其开火模式为 <color=100,255,100>全自动</color>."
 
 L["csgo_glock_mag_32.printname"] = "32-Round 9×19mm 弹匣"
 L["csgo_glock_mag_32.compactname"] = "9mm+"
 L["csgo_glock_mag_32.description"] = string.format(quicktext.bigmag, 32)
 
 /////////////////// M249
-L["csgo_m249_barrel_long.description"] = "Long and heavy barrel meant for suppressive fire."
+L["csgo_m249_barrel_long.description"] = "重型长枪管，用于火力压制."
 
 L["csgo_m249_barrel_short.printname"] = "Paratrooper 枪管"
 L["csgo_m249_barrel_short.compactname"] = "Para"
-L["csgo_m249_barrel_short.description"] = "Compact CQB barrel intended for paratroopers."
+L["csgo_m249_barrel_short.description"] = "为伞兵设计的紧凑型 CQB 枪管."
 
 L["csgo_m249_mag_9mm.printname"] = "200-Round 9×19mm Box"
 L["csgo_m249_mag_9mm.compactname"] = "9mm"
-L["csgo_m249_mag_9mm.description"] = "让 M249 to fire 9×19mm Parabellum."
+L["csgo_m249_mag_9mm.description"] = "让 M249 发射 9×19 毫米 Parabellum 子弹."
 
 L["csgo_m249_mag_12g.printname"] = "45-Round 12-Gauge Box"
 L["csgo_m249_mag_12g.compactname"] = "12G"
-L["csgo_m249_mag_12g.description"] = "让 M249 to fire 12-Gauge buckshot (Fucking what)."
+L["csgo_m249_mag_12g.description"] = "让 M249 发射 12 号口径铅弹 (他妈的什么)."
 
 L["csgo_m249_mag_556_20.printname"] = "20-Round 5.56×45mm NATO 弹匣"
 L["csgo_m249_mag_556_20.compactname"] = "NATO---"
-L["csgo_m249_mag_556_20.description"] = "Gets rid of the belt box and uses a traditional magazine.\n" ..  string.format(quicktext.smallmag, 20)
+L["csgo_m249_mag_556_20.description"] = "取消了皮带盒，使用传统弹匣.\n" ..  string.format(quicktext.smallmag, 20)
 
 L["csgo_m249_mag_556_30.printname"] = "30-Round 5.56×45mm NATO 弹匣"
 L["csgo_m249_mag_556_30.compactname"] = "NATO--"
-L["csgo_m249_mag_556_30.description"] = "Gets rid of the belt box and uses a traditional magazine.\n" ..  string.format(quicktext.smallmag, 30)
+L["csgo_m249_mag_556_30.description"] = "取消了皮带盒，使用传统弹匣.\n" ..  string.format(quicktext.smallmag, 30)
 
 L["csgo_m249_mag_556_60.printname"] = "60-Round 5.56×45mm NATO Casket 弹匣"
 L["csgo_m249_mag_556_60.compactname"] = "NATO-"
-L["csgo_m249_mag_556_60.description"] = "Gets rid of the belt box and uses a traditional magazine.\n" ..  string.format(quicktext.smallmag, 60)
+L["csgo_m249_mag_556_60.description"] = "取消了皮带盒，使用传统弹匣.\n" ..  string.format(quicktext.smallmag, 60)
 
 /////////////////// M3
 L["csgo_m3_mag_7.printname"] = "7-发弹枪管"
@@ -1422,30 +1442,30 @@ L["csgo_m3_mag_4.printname"] = "4-发弹枪管"
 L["csgo_m3_mag_4.compactname"] = "12G-"
 L["csgo_m3_mag_4.description"] = string.format(quicktext.smalltube, 4)
 
-L["csgo_m3_barrel_default.printname"] = "Factory 枪管"
-L["csgo_m3_barrel_default.compactname"] = "Factory"
-L["csgo_m3_barrel_default.description"] = "The barrel the M3 came out of the factory with."
+L["csgo_m3_barrel_default.printname"] = "工厂枪管"
+L["csgo_m3_barrel_default.compactname"] = "工厂枪管"
+L["csgo_m3_barrel_default.description"] = "M3 出厂时配备的枪管."
 
 L["csgo_m3_barrel_long.printname"] = "扩展的枪管"
 L["csgo_m3_barrel_long.compactname"] = "扩展"
-L["csgo_m3_barrel_long.description"] = "扩展的barrel."
+L["csgo_m3_barrel_long.description"] = "扩展的枪管."
 
 L["csgo_m3_barrel_short.printname"] = "缩短的枪管"
-L["csgo_m3_barrel_short.compactname"] = "Short"
-L["csgo_m3_barrel_short.description"] = "缩短的barrel."
+L["csgo_m3_barrel_short.compactname"] = "缩短"
+L["csgo_m3_barrel_short.description"] = "缩短的枪管."
 
 /////////////////// M4A1-S
-L["csgo_m4a1_reciever_default.printname"] = "M16 Carry Handle"
-L["csgo_m4a1_reciever_default.compactname"] = "M16 Handle"
-L["csgo_m4a1_reciever_default.description"] = "Standard M16 carry handle for the M4A1-S."
+L["csgo_m4a1_reciever_default.printname"] = "M16 把手"
+L["csgo_m4a1_reciever_default.compactname"] = "M16 把手"
+L["csgo_m4a1_reciever_default.description"] = "用于 M4A1-S 的标准 M16 把手."
 
 L["csgo_m4a1_barrel_m16a4.printname"] = "A4 枪管"
 L["csgo_m4a1_barrel_m16a4.compactname"] = "A4"
-L["csgo_m4a1_barrel_m16a4.description"] = "Long barrel with RIS handguard taken from the M16A4."
+L["csgo_m4a1_barrel_m16a4.description"] = "带 RIS 护手的长枪管，取自 M16A4."
 
-L["csgo_m4a1_stock_m16.printname"] = "Fixed 枪托"
-L["csgo_m4a1_stock_m16.compactname"] = "Fixed"
-L["csgo_m4a1_stock_m16.description"] = "Standard fixed stock."
+L["csgo_m4a1_stock_m16.printname"] = "固定枪托"
+L["csgo_m4a1_stock_m16.compactname"] = "固定枪托"
+L["csgo_m4a1_stock_m16.description"] = "标准固定枪托."
 
 L["csgo_m4a1_mag_30.printname"] = "30-Round 5.56×45mm 弹匣"
 L["csgo_m4a1_mag_30.compactname"] = "5.56mm+"
@@ -1458,7 +1478,7 @@ L["csgo_m4a1_mag_50.description"] = string.format(quicktext.drummag, 50)
 /////////////////// M4A4
 L["csgo_m4_mag_20.printname"] = "10-Round 12.7×42mmRB 弹匣"
 L["csgo_m4_mag_20.compactname"] = "12.7mm"
-L["csgo_m4_mag_20.description"] = "让 M4A4 into firing the very powerful 12.7×42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
+L["csgo_m4_mag_20.description"] = "让 M4A4 改为发射威力巨大的 12.7×42mmRB 弹药，即 <color=255,255,100>.50 Beowulf</color>.\n将武器锁定为 <color=255,100,100>半自动</color>."
 
 L["csgo_m4_mag_20_5.printname"] = "20-Round 5.56×45mm 弹匣"
 L["csgo_m4_mag_20_5.compactname"] = "5.56mm-"
@@ -1466,21 +1486,21 @@ L["csgo_m4_mag_20_5.description"] = string.format(quicktext.smallmag, 20)
 
 L["csgo_m4_mag_25_9.printname"] = "25-Round 9×19mm 弹匣和适配器"
 L["csgo_m4_mag_25_9.compactname"] = "9mm"
-L["csgo_m4_mag_25_9.description"] = "Installs a 9×19mm magazine adapter."
+L["csgo_m4_mag_25_9.description"] = "安装 9×19 毫米弹匣适配器."
 
 L["csgo_m4_mag_32_9.printname"] = "32-Round 9×19mm 弹匣和适配器"
 L["csgo_m4_mag_32_9.compactname"] = "9mm+"
-L["csgo_m4_mag_32_9.description"] = "Installs a 9×19mm magazine adapter.\n" .. string.format(quicktext.bigmag, 32)
+L["csgo_m4_mag_32_9.description"] = "安装 9×19 毫米弹匣适配器.\n" .. string.format(quicktext.bigmag, 32)
 
 L["go_mag_extended_m4.printname"] = "50-Round 5.56×45mm Drum Mag"
 L["go_mag_extended_m4.compactname"] = "5.56mm+"
 L["go_mag_extended_m4.description"] = string.format(quicktext.drummag, 50)
 
-L["csgo_m4_barrel_sniper.printname"] = "Marksman 枪管"
-L["csgo_m4_barrel_sniper.compactname"] = "Marksman"
-L["csgo_m4_barrel_sniper.description"] = "Long marksman barrel."
+L["csgo_m4_barrel_sniper.printname"] = "狙击手枪管"
+L["csgo_m4_barrel_sniper.compactname"] = "狙击手枪管"
+L["csgo_m4_barrel_sniper.description"] = "长枪管."
 
-L["csgo_m4_tube_retract.description"] = "Attaches the stocks closer to the mount."
+L["csgo_m4_tube_retract.description"] = "使枪托更靠近支架."
 
 /////////////////// MAC-10
 L["csgo_mac10_mag_16.printname"] = "20-Round .45 ACP Ingram 弹匣"
@@ -1493,15 +1513,15 @@ L["csgo_mac10_mag_50.description"] = string.format(quicktext.bigmag, 50)
 
 L["csgo_mac10_barrel_med.printname"] = "Patrol 枪管"
 L["csgo_mac10_barrel_med.compactname"] = "Patrol"
-L["csgo_mac10_barrel_med.description"] = "扩展的barrel."
+L["csgo_mac10_barrel_med.description"] = "扩展的枪管."
 
-L["csgo_mac10_barrel_long.printname"] = "Carbine 枪管"
-L["csgo_mac10_barrel_long.compactname"] = "Carbine"
-L["csgo_mac10_barrel_long.description"] = "Very long precision barrel."
+L["csgo_mac10_barrel_long.printname"] = "卡宾枪枪管"
+L["csgo_mac10_barrel_long.compactname"] = "卡宾枪枪管"
+L["csgo_mac10_barrel_long.description"] = "超长精密枪管."
 
-L["csgo_mac10_barrel_shroud.printname"] = "Shroud 枪管"
-L["csgo_mac10_barrel_shroud.compactname"] = "Shroud"
-L["csgo_mac10_barrel_shroud.description"] = "Long barrel with attached heat shield."
+L["csgo_mac10_barrel_shroud.printname"] = "护罩枪管"
+L["csgo_mac10_barrel_shroud.compactname"] = "护罩枪管"
+L["csgo_mac10_barrel_shroud.description"] = "长枪管，附带隔热罩."
 
 /////////////////// MAG-7
 L["csgo_mag7_mag_7.printname"] = "7-Round 12-Gauge 弹匣"
@@ -1509,13 +1529,13 @@ L["csgo_mag7_mag_7.compactname"] = "12G+"
 L["csgo_mag7_mag_7.description"] = string.format(quicktext.bigmag, 7)
 
 /////////////////// MP5
-L["csgo_mp5_k.printname"] = "Kurz 枪管 and Handguard"
-L["csgo_mp5_k.compactname"] = "Kurz"
-L["csgo_mp5_k.description"] = "Shortens the barrel and handguard for a more compact profile.\nAdds a <color=255,255,100>cosmetic foregrip</color>."
+L["csgo_mp5_k.printname"] = "库尔兹枪管和护手"
+L["csgo_mp5_k.compactname"] = "库尔兹"
+L["csgo_mp5_k.description"] = "缩短枪管和护手，使外形更紧凑.\n增加了一个 <color=255,255,100>外观前握把</color>."
 
-L["csgo_mp5_stock_k.printname"] = "折叠式 枪托"
-L["csgo_mp5_stock_k.compactname"] = "折叠式"
-L["csgo_mp5_stock_k.description"] = "折叠式 PDW stock."
+L["csgo_mp5_stock_k.printname"] = "折叠式枪托"
+L["csgo_mp5_stock_k.compactname"] = "折叠式枪托"
+L["csgo_mp5_stock_k.description"] = "折叠式 PDW 枪托."
 
 L["csgo_mp5_mag_k.printname"] = "20-Round 9×19mm 弹匣"
 L["csgo_mp5_mag_k.compactname"] = "9mm-"
@@ -1527,12 +1547,12 @@ L["csgo_mp5_mag_40.description"] = string.format(quicktext.bigmag, 40)
 
 L["csgo_mp5_mag_10mm.printname"] = "30-Round 10×25mm 弹匣"
 L["csgo_mp5_mag_10mm.compactname"] = "10mm"
-L["csgo_mp5_mag_10mm.description"] = "Rechambers the MP5 into firing the more powerful 10×25mm cartridge, better known as <color=255,255,100>10mm 自动</color>.\nLocks the weapon to <color=255,255,100>full auto & fast-firing 2-round burst</color>."
+L["csgo_mp5_mag_10mm.description"] = "将 MP5 改为发射威力更大的 10×25 毫米子弹，也就是 <color=255,255,100>10mm 自动</color>.\n将武器锁定为 <color=255,255,100>全自动和快速双发连射</color>."
 
 /////////////////// MP5-SD
-L["csgo_mp5_stock_none.printname"] = "No 枪托"
-L["csgo_mp5_stock_none.compactname"] = "None"
-L["csgo_mp5_stock_none.description"] = "Removes the stock entirely."
+L["csgo_mp5_stock_none.printname"] = "无枪托"
+L["csgo_mp5_stock_none.compactname"] = "无"
+L["csgo_mp5_stock_none.description"] = "完全拆除枪托."
 
 /////////////////// MP7
 L["csgo_mp7_mag_short.printname"] = "20-Round 4.6×30mm 弹匣"
@@ -1543,18 +1563,18 @@ L["csgo_mp7_mag_long.printname"] = "40-Round 4.6×30mm 弹匣"
 L["csgo_mp7_mag_long.compactname"] = "4.6mm+"
 L["csgo_mp7_mag_long.description"] = string.format(quicktext.bigmag, 40)
 
-L["csgo_mp7_iron2.printname"] = "Flip Down Iron 瞄准镜s"
-L["csgo_mp7_iron2.compactname"] = "Flipped"
-L["csgo_mp7_iron2.description"] = "Flip down the iron sights to the so-called PDW position."
+L["csgo_mp7_iron2.printname"] = "向下翻转瞄准镜"
+L["csgo_mp7_iron2.compactname"] = "翻转瞄准镜"
+L["csgo_mp7_iron2.description"] = "将铁制瞄准镜向下翻转到所谓的 PDW 位置."
 
 /////////////////// MP9
-L["csgo_mp9_barrel_long.printname"] = "Long 枪管"
-L["csgo_mp9_barrel_long.compactname"] = "Long"
-L["csgo_mp9_barrel_long.description"] = "Slightly longer barrel."
+L["csgo_mp9_barrel_long.printname"] = "长枪管"
+L["csgo_mp9_barrel_long.compactname"] = "长枪管"
+L["csgo_mp9_barrel_long.description"] = "稍长的枪管."
 
 L["csgo_mp9_barrel_short.printname"] = "ATF 枪管"
 L["csgo_mp9_barrel_short.compactname"] = "ATF"
-L["csgo_mp9_barrel_short.description"] = "Even shorter barrel."
+L["csgo_mp9_barrel_short.description"] = "更短的枪管."
 
 L["csgo_mp9_mag_short.printname"] = "20-Round 9×19mm 弹匣"
 L["csgo_mp9_mag_short.compactname"] = "9mm-"
@@ -1565,35 +1585,35 @@ L["csgo_mp9_mag_long.compactname"] = "9mm+"
 L["csgo_mp9_mag_long.description"] = string.format(quicktext.bigmag, 40)
 
 /////////////////// Grenades
-L["csgo_nade_timer.printname"] = "Grenade Fuse (3 Seconds)"
-L["csgo_nade_timer.compactname"] = "Fuse"
-L["csgo_nade_timer.description"] = "Gives your grenade a <color=100,255,100>3 second</color> fuse timer.\nPlan your throws beforehand!"
+L["csgo_nade_timer.printname"] = "手榴弹引信 (3 秒)"
+L["csgo_nade_timer.compactname"] = "引信"
+L["csgo_nade_timer.description"] = "为你的手榴弹提供 <color=100,255,100>3 秒</color> 钟的引信计时器.\n事先计划好投掷!"
 
 /////////////////// Negev
-L["csgo_negev_barrel_long.printname"] = "Heavy 枪管"
-L["csgo_negev_barrel_long.compactname"] = "Heavy"
-L["csgo_negev_barrel_long.description"] = "Long heavy barrel."
+L["csgo_negev_barrel_long.printname"] = "重型枪管"
+L["csgo_negev_barrel_long.compactname"] = "重型枪管"
+L["csgo_negev_barrel_long.description"] = "重型长枪管."
 
 L["csgo_negev_barrel_short.printname"] = "SF 枪管"
 L["csgo_negev_barrel_short.compactname"] = "SF"
-L["csgo_negev_barrel_short.description"] = "缩短的barrel."
+L["csgo_negev_barrel_short.description"] = "缩短的枪管."
 
 L["csgo_negev_mag_762.printname"] = "50-Round 7.62×51mm Box"
 L["csgo_negev_mag_762.compactname"] = "7.62mm"
-L["csgo_negev_mag_762.description"] = "让 Negev to fire 7.62×51mm."
+L["csgo_negev_mag_762.description"] = "让内盖夫发射 7.62×51 毫米子弹."
 
 L["csgo_negev_mag_556m.printname"] = "50-Round 5.56×45mm Drum 弹匣"
 L["csgo_negev_mag_556m.compactname"] = "5.56mm-"
-L["csgo_negev_mag_556m.description"] = "Gets rid of the belt box and uses a traditional magazine.\n" ..  string.format(quicktext.smallmag, 50)
+L["csgo_negev_mag_556m.description"] = "取消了皮带盒，使用传统弹匣.\n" ..  string.format(quicktext.smallmag, 50)
 
 /////////////////// Nova
 L["csgo_nova_barrel_long.printname"] = "扩展的枪管"
-L["csgo_nova_barrel_long.compactname"] = "扩展"
-L["csgo_nova_barrel_long.description"] = "定制-made extended barrel."
+L["csgo_nova_barrel_long.compactname"] = "扩展的枪管"
+L["csgo_nova_barrel_long.description"] = "定制加长枪管."
 
 L["csgo_nova_barrel_short.printname"] = "CQC 枪管"
 L["csgo_nova_barrel_short.compactname"] = "CQC"
-L["csgo_nova_barrel_short.description"] = "定制-made shortened barrel."
+L["csgo_nova_barrel_short.description"] = "定制缩短枪管."
 
 L["csgo_nova_mag_6.printname"] = "6-发弹枪管"
 L["csgo_nova_mag_6.compactname"] = "12G+"
@@ -1603,13 +1623,13 @@ L["csgo_nova_mag_8.printname"] = "8-发弹枪管"
 L["csgo_nova_mag_8.compactname"] = "12G++"
 L["csgo_nova_mag_8.description"] = string.format(quicktext.bigtube, 8)
 
-L["csgo_nova_stock_m3.printname"] = "Polymer 枪托 with 手枪 Grip"
+L["csgo_nova_stock_m3.printname"] = "聚合枪托与手枪握把"
 L["csgo_nova_stock_m3.compactname"] = "Polymer"
-L["csgo_nova_stock_m3.description"] = "Default stock and pistol grip from the M3."
+L["csgo_nova_stock_m3.description"] = "M3 的默认枪托和手枪握把."
 
-L["csgo_nova_stock_xm1014.printname"] = "Adjustable 枪托 with 手枪 Grip"
-L["csgo_nova_stock_xm1014.compactname"] = "Adjustable"
-L["csgo_nova_stock_xm1014.description"] = "Default stock and pistol grip from the XM1014."
+L["csgo_nova_stock_xm1014.printname"] = "可调节枪托与手枪握把"
+L["csgo_nova_stock_xm1014.compactname"] = "可调节"
+L["csgo_nova_stock_xm1014.description"] = "XM1014 的默认枪托和手枪握把."
 
 /////////////////// P2000
 L["csgo_p2000_slide_long.printname"] = "P2000-L 滑轨和枪管"
@@ -1618,50 +1638,50 @@ L["csgo_p2000_slide_long.description"] = "扩展的滑轨和枪管."
 
 L["csgo_p2000_slide_short.printname"] = "P2000-SK 滑轨和枪管"
 L["csgo_p2000_slide_short.compactname"] = "SK"
-L["csgo_p2000_slide_short.description"] = "Lightweight 滑轨和枪管."
+L["csgo_p2000_slide_short.description"] = "轻型滑轨和枪管."
 
 L["csgo_p2000_mag_20.printname"] = "20-Round 9×19mm 弹匣"
 L["csgo_p2000_mag_20.compactname"] = "9mm+"
 L["csgo_p2000_mag_20.description"] = string.format(quicktext.bigmag, 20)
 
 /////////////////// P250
-L["csgo_p250_slide_flux.printname"] = "Flux Raider PDW Frame"
-L["csgo_p250_slide_flux.compactname"] = "FR Frame"
-L["csgo_p250_slide_flux.description"] = "Attaches a PDW frame around the weapon alongside a longer 滑轨和枪管."
+L["csgo_p250_slide_flux.printname"] = "Flux Raider PDW 框架"
+L["csgo_p250_slide_flux.compactname"] = "FR 框架"
+L["csgo_p250_slide_flux.description"] = "将 PDW 框架与较长的滑轨和枪管一起安装在武器周围."
 
-L["csgo_p250_slide_long.printname"] = "Full Size 滑轨"
-L["csgo_p250_slide_long.compactname"] = "Full"
-L["csgo_p250_slide_long.description"] = "Longer 滑轨和枪管."
+L["csgo_p250_slide_long.printname"] = "完整尺寸滑轨"
+L["csgo_p250_slide_long.compactname"] = "完整"
+L["csgo_p250_slide_long.description"] = "更长的滑轨和枪管."
 
-L["csgo_p250_slide_short.printname"] = "Subcompact Frame"
+L["csgo_p250_slide_short.printname"] = "超小型框架"
 L["csgo_p250_slide_short.compactname"] = "Sub"
-L["csgo_p250_slide_short.description"] = "Shortens the slide, barrel and pistol grip."
+L["csgo_p250_slide_short.description"] = "缩短滑膛、枪管和手枪握把的长度."
 
 /////////////////// R8 Revolver
 L["csgo_r8_model.printname"] = "6-Round Cylinder"
 L["csgo_r8_model.compactname"] = ".357-"
-L["csgo_r8_model.description"] = "Replaces the cylinder with one that fits <color=255,100,100>6 rounds</color>.\nAlso replaces the barrel with a slim one without any rails."
+L["csgo_r8_model.description"] = "用一个适合 <color=255,100,100>6 发子弹</color>的圆筒替换它.\n还将枪管更换为不带任何导轨的细长枪管."
 
 /////////////////// P90
-L["go_p90_extendedbarrel.printname"] = "扩展的枪管 and RIS Handguard"
+L["go_p90_extendedbarrel.printname"] = "扩展的枪管和 RIS 护手"
 L["go_p90_extendedbarrel.compactname"] = "RIS"
-L["go_p90_extendedbarrel.description"] = "Very long barrel with attached RIS handguard allowing for more attachments."
+L["go_p90_extendedbarrel.description"] = "超长枪管，附带 RIS 护手，可安装更多附件."
 
-L["csgo_p90_sling.printname"] = "Sling"
-L["csgo_p90_sling.compactname"] = "Sling"
-L["csgo_p90_sling.description"] = "Wraps a sling around the P90."
+L["csgo_p90_sling.printname"] = "吊索"
+L["csgo_p90_sling.compactname"] = "吊索"
+L["csgo_p90_sling.description"] = "在 P90 上缠绕吊索."
 
-L["csgo_p90_nosock.printname"] = "Compact Frame"
-L["csgo_p90_nosock.compactname"] = "Compact"
-L["csgo_p90_nosock.description"] = "Frankensteins the frame of the P90 by removing most of the rear and giving it a conventional pistol grip."
+L["csgo_p90_nosock.printname"] = "紧凑型框架"
+L["csgo_p90_nosock.compactname"] = "紧凑型框架"
+L["csgo_p90_nosock.description"] = "将 P90 的大部分后部移除，并赋予其传统的手枪握把，从而对其枪架进行了改造."
 
-L["csgo_p90_top_2.printname"] = "Alternative Top Cover"
-L["csgo_p90_top_2.compactname"] = "Alt. Cover"
-L["csgo_p90_top_2.description"] = "Replaces the top cover of the P90 to a more modern one."
+L["csgo_p90_top_2.printname"] = "替代顶盖"
+L["csgo_p90_top_2.compactname"] = "替代顶盖"
+L["csgo_p90_top_2.description"] = "将 P90 的顶盖更换为更现代的顶盖."
 
 L["csgo_p90_barrel_med.printname"] = "PS90 枪管"
 L["csgo_p90_barrel_med.compactname"] = "PS90"
-L["csgo_p90_barrel_med.description"] = "Medium-length barrel."
+L["csgo_p90_barrel_med.description"] = "中长枪管."
 
 L["csgo_p90_mag_30.printname"] = "30-Round 5.7×28mm 弹匣"
 L["csgo_p90_mag_30.compactname"] = "5.7mm-"
@@ -1669,11 +1689,11 @@ L["csgo_p90_mag_30.description"] = string.format(quicktext.smallmag, 30)
 
 L["csgo_p90_mag_30_stanag.printname"] = "30-Round 5.56×45mm NATO 弹匣"
 L["csgo_p90_mag_30_stanag.compactname"] = "NATO-"
-L["csgo_p90_mag_30_stanag.description"] = "Frankenstein-attaches a <color=255,100,100>30-round</color> 5.56×45mm STANAG magazine onto the P90.\n\nI need therapy."
+L["csgo_p90_mag_30_stanag.description"] = "科学怪人--在 P90 上安装一个 <color=255,100,100>30 发</color>5.56×45 毫米 STANAG 弹匣.\n\n我需要治疗."
 
 L["csgo_p90_mag_20_stanag.printname"] = "20-Round 5.56×45mm NATO 弹匣"
 L["csgo_p90_mag_20_stanag.compactname"] = "NATO--"
-L["csgo_p90_mag_20_stanag.description"] = "Frankenstein-attaches a <color=255,100,100>20-round</color> 5.56×45mm STANAG magazine onto the P90.\n\nMy therapist isn't answering..."
+L["csgo_p90_mag_20_stanag.description"] = "科学怪人--在 P90 上安装一个 <color=255,100,100>20 发</color>5.56×45 毫米 STANAG 弹匣.\n\n我的治疗师不接电话..."
 
 /////////////////// Sawed-Off
 L["csgo_sawedoff_mag_5.printname"] = "5-发弹枪管"
@@ -1682,40 +1702,40 @@ L["csgo_sawedoff_mag_5.description"] = string.format(quicktext.bigtube, 5)
 
 L["csgo_sawedoff_mag_6.printname"] = "6-发弹枪管"
 L["csgo_sawedoff_mag_6.compactname"] = "12G++"
-L["csgo_sawedoff_mag_6.description"] = string.format(quicktext.bigtube, 6) .. "\n\n[ 需要 <color=255,255,100>Uncut 枪管</color> ]"
+L["csgo_sawedoff_mag_6.description"] = string.format(quicktext.bigtube, 6) .. "\n\n[ 需要 <color=255,255,100>未切割枪管</color> ]"
 
 L["csgo_sawedoff_mag_7.printname"] = "7-发弹枪管"
 L["csgo_sawedoff_mag_7.compactname"] = "12G+++"
-L["csgo_sawedoff_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\n\n[ 需要 <color=255,255,100>Uncut 枪管</color> ]"
+L["csgo_sawedoff_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\n\n[ 需要 <color=255,255,100>未切割枪管</color> ]"
 
-L["csgo_sawedoff_barrel_ext.printname"] = "Uncut 枪管"
-L["csgo_sawedoff_barrel_ext.compactname"] = "Uncut"
-L["csgo_sawedoff_barrel_ext.description"] = "Uncut barrel with a fixed front sight post."
+L["csgo_sawedoff_barrel_ext.printname"] = "未切割枪管"
+L["csgo_sawedoff_barrel_ext.compactname"] = "未切割"
+L["csgo_sawedoff_barrel_ext.description"] = "未切割枪管，配有固定前瞄准柱."
 
-L["csgo_sawedoff_stock_full.printname"] = "Factory 枪托"
-L["csgo_sawedoff_stock_full.compactname"] = "Factory"
-L["csgo_sawedoff_stock_full.description"] = "Wooden stock straight from the factory."
+L["csgo_sawedoff_stock_full.printname"] = "出厂枪托"
+L["csgo_sawedoff_stock_full.compactname"] = "出厂"
+L["csgo_sawedoff_stock_full.description"] = "出厂时直接使用木质枪托."
 
 /////////////////// SCAR-17
-L["csgo_scar17_barrel_long.printname"] = "Marksman 枪管"
-L["csgo_scar17_barrel_long.compactname"] = "Marksman"
-L["csgo_scar17_barrel_long.description"] = "Long barrel."
+L["csgo_scar17_barrel_long.printname"] = "狙击枪枪管"
+L["csgo_scar17_barrel_long.compactname"] = "狙击枪枪管"
+L["csgo_scar17_barrel_long.description"] = "长枪管."
 
-L["csgo_scar17_barrel_short.printname"] = "Short 枪管"
-L["csgo_scar17_barrel_short.compactname"] = "Short"
-L["csgo_scar17_barrel_short.description"] = "Compact barrel."
+L["csgo_scar17_barrel_short.printname"] = "短枪管"
+L["csgo_scar17_barrel_short.compactname"] = "短枪管"
+L["csgo_scar17_barrel_short.description"] = "紧凑型枪管."
 
-L["csgo_scar17_stock_specialized.printname"] = "特殊ty 枪托"
-L["csgo_scar17_stock_specialized.compactname"] = "特殊ty"
-L["csgo_scar17_stock_specialized.description"] = "Heavy-weight specialty stock."
+L["csgo_scar17_stock_specialized.printname"] = "特殊枪托"
+L["csgo_scar17_stock_specialized.compactname"] = "特殊"
+L["csgo_scar17_stock_specialized.description"] = "重型特种枪托."
 
 L["csgo_mk17_mag_1.printname"] = "20-Round 5.56×45mm 弹匣"
 L["csgo_mk17_mag_1.compactname"] = "5.56mm"
-L["csgo_mk17_mag_1.description"] = "让 SCAR-17 to accept 5.56mm 弹匣."
+L["csgo_mk17_mag_1.description"] = "让 SCAR-17 使用 5.56 毫米弹匣."
 
 L["csgo_mk17_mag_2.printname"] = "30-Round 5.56×45mm 弹匣"
 L["csgo_mk17_mag_2.compactname"] = "5.56mm+"
-L["csgo_mk17_mag_2.description"] = "让 SCAR-17 to accept 5.56mm 弹匣.\n" .. string.format(quicktext.bigmag, 30)
+L["csgo_mk17_mag_2.description"] = "让 SCAR-17 使用 5.56 毫米弹匣.\n" .. string.format(quicktext.bigmag, 30)
 
 L["csgo_mk17_mag_30.printname"] = "30-Round 7.62×51mm 弹匣"
 L["csgo_mk17_mag_30.compactname"] = "7.62mm+"
@@ -1723,11 +1743,11 @@ L["csgo_mk17_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
 L["csgo_scar17_stock_pdw.printname"] = "PDW 枪托"
 L["csgo_scar17_stock_pdw.compactname"] = "PDW"
-L["csgo_scar17_stock_pdw.description"] = "Lightweight and cut down stock."
+L["csgo_scar17_stock_pdw.description"] = "重量轻、体积小的枪托."
 
-L["csgo_scar17_stock_bullpup.printname"] = "Bullpup Kit"
-L["csgo_scar17_stock_bullpup.compactname"] = "Bullpup"
-L["csgo_scar17_stock_bullpup.description"] = "Applies a bullpup kit onto the SCAR-17, turning it into a bullpup rifle."  .. "\n\n[ 需要 <color=255,255,100>Marksman 枪管</color> ]"
+L["csgo_scar17_stock_bullpup.printname"] = "牛头犬套件"
+L["csgo_scar17_stock_bullpup.compactname"] = "牛头犬套件"
+L["csgo_scar17_stock_bullpup.description"] = "在 SCAR-17 上安装了牛头犬套件，使其成为牛头犬步枪."  .. "\n\n[ 需要 <color=255,255,100>狙击枪枪管</color> ]"
 
 /////////////////// SCAR-20
 L["csgo_scar20_barrel_factory.printname"] = "Mk 17 枪管"
@@ -1768,7 +1788,7 @@ L["csgo_sg556_barrel_proto.printname"] = "SG 541 原型机的枪管和护手"
 L["csgo_sg556_barrel_proto.compactname"] = "原型"
 L["csgo_sg556_barrel_proto.description"] = "SG 541 原型机的轻型枪管和护手."
 
-L["csgo_sg556_stock_folding.printname"] = "SG 552 突击型 折叠式 枪托"
+L["csgo_sg556_stock_folding.printname"] = "SG 552 突击型 折叠式枪托"
 L["csgo_sg556_stock_folding.compactname"] = "折叠式"
 L["csgo_sg556_stock_folding.description"] = "来自 SIG 552 突击型 的轻型折叠枪托."
 
@@ -1849,8 +1869,8 @@ L["csgo_ump_mag_30.compactname"] = ".45 ACP+"
 L["csgo_ump_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
 /////////////////// USP-S
-L["csgo_usp_slide_long.printname"] = "Elite 滑轨和枪管"
-L["csgo_usp_slide_long.compactname"] = "Elite"
+L["csgo_usp_slide_long.printname"] = "精英 滑轨和枪管"
+L["csgo_usp_slide_long.compactname"] = "精英"
 L["csgo_usp_slide_long.description"] = "扩展的滑轨和枪管."
 
 L["csgo_usp_slide_short.printname"] = "USP-C 滑轨和枪管"
@@ -1887,7 +1907,7 @@ L["csgo_xm1014_mag_8.compactname"] = "12G+"
 L["csgo_xm1014_mag_8.description"] = string.format(quicktext.bigtube, 10) .. "\n\n[ 需要 <color=255,255,100>警用枪管</color> ]\n[ 不兼容 <color=255,100,100>突破式枪管</color> ]"
 
 /////////////////// Integration: 逃离塔科夫
-eftdesc = "启用来自 <color=255,255,100>逃离塔科夫</color> 武器包的装备配件功能.\n\n<color=255,100,100>警告</color>: 未针对 GSR 进行优化 - 可能会造成视觉错误.\n<color=175,175,255>Ergonomics</color> 无效果."
+eftdesc = "启用来自 <color=255,255,100>逃离塔科夫</color> 武器包的装备配件功能.\n\n<color=255,100,100>警告</color>: 未针对 GSR 进行优化 - 可能会造成视觉错误.\n<color=175,175,255>人体工学功能</color> 无效果."
 
 L["go_eft_scopes.printname"] = "逃离塔科夫 - 瞄具"
 L["go_eft_scopes.compactname"] = "EFT"
@@ -2000,3 +2020,434 @@ L["go_polyarms_muzzle.description"] = polydesc
 L["go_polyarms_stocks.printname"] = "PolyArms 项目 - 枪托"
 L["go_polyarms_stocks.compactname"] = "PolyArms"
 L["go_polyarms_stocks.description"] = mw19desc
+
+
+///////////////////  GetPhrase Stuff - If other language, remove everything below here!
+L["csgo_description_knife_t"] = ARC9:GetPhrase("csgo_description_knife_ct") or "这把刀安静且随时可用，它的主攻击速度快、伤害低，副攻击速度慢、伤害高。背刺将使玩家获得瞬杀."
+
+L["go_holdstyle_2.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_2.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_2.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_3.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_3.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_3.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_4.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_4.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_4.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_5.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_5.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_5.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_6.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_6.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_6.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_7.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_7.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_7.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_8.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_8.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_8.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_9.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_9.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_9.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_10_mp9.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_10_mp9.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_10_mp9.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_11_m4.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_11_m4.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_11_m4.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_12.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_12.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_12.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_13.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_13.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_13.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_14.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_14.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_14.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_15.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_15.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_15.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_16_ump.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_16_ump.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_16_ump.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_17_awp.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_17_awp.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_17_awp.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_18_nova.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_18_nova.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_18_nova.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_19.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_19.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_19.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_20.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_20.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_20.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_aug_integral.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_aug_integral.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_aug_integral.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_aug_integral_2.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_aug_integral_2.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_aug_integral_2.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_elite_integral.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_elite_integral.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_elite_integral.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_mp7_integral.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_mp7_integral.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_mp7_integral.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_scout_integral.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["go_holdstyle_scout_integral.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["go_holdstyle_scout_integral.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["csgo_bizon_hold_2.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["csgo_p90_hold.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "次要握持类型"
+L["csgo_p90_hold.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "次要握持"
+L["csgo_p90_hold.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "改变武器的握持方式."
+
+L["go_holdstyle_mp7f.printname"] = ARC9:GetPhrase("go_holdstyle_augf.printname") or "折叠式握把"
+L["go_holdstyle_mp7f.compactname"] = ARC9:GetPhrase("go_holdstyle_augf.compactname") or "折叠式"
+L["go_holdstyle_mp7f.description"] = ARC9:GetPhrase("go_holdstyle_augf.description") or "将前握把向上折叠，改变握持武器的方式.\n纯粹的 <color=175,175,255>外观</color>."
+
+L["csgo_rail_optic_2_alt.printname"] = ARC9:GetPhrase("csgo_rail_optic_2.printname") or "燕尾导轨"
+L["csgo_rail_optic_2_alt.compactname"] = ARC9:GetPhrase("csgo_rail_optic_2.compactname") or "燕尾导轨"
+L["csgo_rail_optic_2_alt.description"] = ARC9:GetPhrase("csgo_rail_optic_2.description") or "通过燕尾槽安装 RIS 导轨, 允许安装 定制瞄具."
+
+L["csgo_rail_optic_4.printname"] = ARC9:GetPhrase("csgo_rail_optic_1.printname") or "定制 瞄具导轨"
+L["csgo_rail_optic_4.compactname"] = ARC9:GetPhrase("csgo_rail_optic_1.compactname") or "瞄准导轨"
+
+L["csgo_rail_ub_mp5.printname"] = ARC9:GetPhrase("csgo_rail_ub_1.printname") or "下枪管 Picatinny 导轨"
+L["csgo_rail_ub_mp5.compactname"] = ARC9:GetPhrase("csgo_rail_ub_1.compactname") or "UB 导轨"
+L["csgo_rail_ub_mp5.description"] = ARC9:GetPhrase("csgo_rail_ub_1.description") or "安装皮卡汀尼导轨，可安装前握把和枪管下武器装备."
+
+L["csgo_ammo_sg_magnum_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_magnum.printname") or "马格南子弹"
+L["csgo_ammo_sg_magnum_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_magnum.compactname") or "马格南"
+L["csgo_ammo_sg_magnum_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_magnum.description") or "高能霰弹枪装有较大的弹丸，数量较少."
+
+L["csgo_ammo_sg_bird_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_bird.printname") or "鸟弹"
+L["csgo_ammo_sg_bird_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_bird.compactname") or "鸟弹"
+L["csgo_ammo_sg_bird_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_bird.description") or "装有更多小弹丸的子弹."
+
+L["csgo_ammo_sg_slug_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_slug.printname") or "全口径弹头"
+L["csgo_ammo_sg_slug_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_slug.compactname") or "全口径弹头"
+L["csgo_ammo_sg_slug_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_slug.description") or "用一个完整的弹头代替小弹丸."
+
+L["csgo_ammo_sg_triple_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_triple.printname") or "三连击弹头"
+L["csgo_ammo_sg_triple_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_triple.compactname") or "弹头 x3"
+L["csgo_ammo_sg_triple_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_triple.description") or "用三颗弹头大小的弹丸代替小弹丸."
+
+L["csgo_ammo_sg_flechette_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_flechette.printname") or "箭形"
+L["csgo_ammo_sg_flechette_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_flechette.compactname") or "箭形"
+L["csgo_ammo_sg_flechette_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_flechette.description") or "用细镖形弹丸取代小弹丸."
+
+L["csgo_ammo_sg_frag_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_frag.printname") or "\"FRAG-12\" 高爆弹"
+L["csgo_ammo_sg_frag_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_frag.compactname") or "FRAG-12"
+L["csgo_ammo_sg_frag_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_frag.description") or "用接触即爆炸的单个弹头取代小弹丸."
+
+L["csgo_ammo_sg_rebounder_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_rebounder.printname") or "反弹子弹"
+L["csgo_ammo_sg_rebounder_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_rebounder.compactname") or "反弹子弹"
+L["csgo_ammo_sg_rebounder_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_rebounder.description") or "将弹丸换成专门设计的弹丸，使其在接触时反弹."
+
+L["csgo_ammo_sg_frag_x4_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_frag_x4.printname") or "\"FRAG-12\" 高爆弹 x4"
+L["csgo_ammo_sg_frag_x4_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_frag_x4.compactname") or "FRAG-12 x4"
+L["csgo_ammo_sg_frag_x4_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_frag_x4.description") or "将小弹丸换成四枚在接触时爆炸的弹丸."
+
+L["go_supp_shitvo_ubgl.printname"] = ARC9:GetPhrase("go_supp_shitvo.printname") or "Salvo-12 消音器"
+L["go_supp_shitvo_ubgl.compactname"] = ARC9:GetPhrase("go_supp_shitvo.compactname") or "Salvo-12"
+L["go_supp_shitvo_ubgl.description"] = ARC9:GetPhrase("go_supp_shitvo.description") or "为霰弹枪设计的大型和笨重的消音器可降低枪声分贝."
+
+L["csgo_optic_acog_rmr_alt_nonrail.printname"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.printname") or "Trijicon RMR"
+L["csgo_optic_acog_rmr_alt_nonrail.compactname"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.compactname") or "RMR"
+L["csgo_optic_acog_rmr_alt_nonrail.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "紧凑型反射式瞄具."
+
+L["csgo_optic_rmr2_rifle.printname"] = ARC9:GetPhrase("csgo_optic_rmr_rifle.printname") or "Trijicon RMR, 高规格"
+L["csgo_optic_rmr2_rifle.compactname"] = ARC9:GetPhrase("csgo_optic_rmr_rifle.compactname") or "RMR HP"
+L["csgo_optic_rmr2_rifle.description"] = ARC9:GetPhrase("csgo_optic_rmr_rifle.description") or "安装在高规格导轨上的紧凑型反光瞄准镜."
+
+L["csgo_optic_rmr3_rifle.description"] = ARC9:GetPhrase("csgo_optic_rmr_rifle.description") or "安装在高规格导轨上的紧凑型反光瞄准镜."
+
+L["csgo_optic_t1_lp.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "紧凑型反射式瞄具."
+
+L["csgo_optic_trijicon_alt_nonrail.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "紧凑型反射式瞄具."
+
+L["csgo_optic_trijicon_nonrail.printname"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.printname") or "Trijicon RMR"
+L["csgo_optic_trijicon_nonrail.compactname"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.compactname") or "RMR"
+L["csgo_optic_trijicon_nonrail.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "紧凑型反射式瞄具."
+
+L["csgo_optic_trijicon_mro.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "紧凑型反射式瞄具."
+
+L["csgo_optic_trijicon.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "紧凑型反射式瞄具."
+
+L["csgo_optic_trijicon_alt.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "紧凑型反射式瞄具."
+
+L["csgo_optic_trijicon_alt_nonrail.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "紧凑型反射式瞄具."
+
+L["csgo_pistols_view2.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_pistols_view2.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_pistols_view2.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_pistols_view3.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_pistols_view3.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_pistols_view3.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["go_stock_awp_lc10.printname"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.printname") or "镂空枪托"
+L["go_stock_awp_lc10.compactname"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.compactname") or "镂空枪托"
+L["go_stock_awp_lc10.description"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.description") or "轻型镂空枪托."
+
+L["csgo_bizon_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_bizon_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_bizon_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_m4a4_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_m4a4_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_m4a4_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_mac10_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_mac10_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_mac10_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_mag7_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_mag7_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_mag7_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_nova_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_nova_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_nova_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_p90_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_p90_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_p90_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_sawedoff_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_sawedoff_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_sawedoff_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_scar20_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_scar20_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_scar20_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_sg552_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_sg552_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_sg552_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_famas_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_famas_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_famas_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_galilar_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_galilar_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_galilar_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_mp5sd_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_mp5sd_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_mp5sd_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_mp7_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_mp7_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_mp7_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_mp9_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_mp9_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_mp9_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_negev_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_negev_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_negev_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_ump_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_ump_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_ump_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_five_slide_long.description"] = ARC9:GetPhrase("csgo_elite_slide_long.description") or "更长的滑轨和枪管."
+
+L["csgo_five_slide_short.description"] = ARC9:GetPhrase("csgo_elite_slide_short.description") or "缩短的滑轨和枪管."
+
+L["csgo_g3_barrel_g3a3_smg.printname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.printname") or "G3A3 枪管"
+L["csgo_g3_barrel_g3a3_smg.compactname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.compactname") or "A3"
+L["csgo_g3_barrel_g3a3_smg.description"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.description") or "来自 G3A3 的中长枪管."
+
+L["csgo_g3_barrel_medium_smg.printname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.printname") or "G3KA4 枪管"
+L["csgo_g3_barrel_medium_smg.compactname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.compactname") or "KA4"
+L["csgo_g3_barrel_medium_smg.description"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.description") or "来自 G3KA4 的中长枪管."
+
+L["csgo_g3_barrel_short_smg.printname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.printname") or "库尔兹枪管"
+L["csgo_g3_barrel_short_smg.compactname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.compactname") or "库尔兹"
+L["csgo_g3_barrel_short_smg.description"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.description") or "缩短的G3KA4枪管."
+
+L["csgo_g3_view_alt_1.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "次要视角"
+L["csgo_g3_view_alt_1.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "次要视角"
+L["csgo_g3_view_alt_1.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "改变武器在视野中的位置."
+
+L["csgo_galilar_mag_ak_30.printname"] = ARC9:GetPhrase("csgo_galil_mag_ak_30.printname") or "30-Round 7.62×39mm Polymer 弹匣"
+L["csgo_galilar_mag_ak_30.compactname"] = ARC9:GetPhrase("csgo_galil_mag_ak_30.compactname") or "7.62mm"
+
+L["csgo_galilar_mag_ak_45.printname"] = ARC9:GetPhrase("csgo_galil_mag_ak_40.printname") or "40-Round 7.62×39mm Polymer 弹匣"
+L["csgo_galilar_mag_ak_45.compactname"] = ARC9:GetPhrase("csgo_galil_mag_ak_40.compactname") or "7.62mm+"
+
+L["csgo_m249_stock_skeleton.printname"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.printname") or "镂空枪托"
+L["csgo_m249_stock_skeleton.compactname"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.compactname") or "镂空枪托"
+L["csgo_m249_stock_skeleton.description"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.description") or "轻型镂空枪托."
+
+L["csgo_m4_barrel_long.printname"] = ARC9:GetPhrase("csgo_m4a1_barrel_m16a4.printname") or "A4 枪管"
+L["csgo_m4_barrel_long.compactname"] = ARC9:GetPhrase("csgo_m4a1_barrel_m16a4.compactname") or "A4"
+L["csgo_m4_barrel_long.description"] = ARC9:GetPhrase("csgo_m4a1_barrel_m16a4.description") or "长枪管，配有取自 M16A4 的 RIS 护手."
+
+L["csgo_m4_stock_sniper.printname"] = ARC9:GetPhrase("csgo_m4a1_stock_m16.printname") or "固定枪托"
+L["csgo_m4_stock_sniper.compactname"] = ARC9:GetPhrase("csgo_m4a1_stock_m16.compactname") or "固定枪托"
+L["csgo_m4_stock_sniper.description"] = ARC9:GetPhrase("csgo_m4a1_stock_m16.description") or "标准固定枪托."
+
+L["csgo_m4_tube_retract.printname"] = ARC9:GetPhrase("csgo_stock_tube_retracted.printname") or "缓冲管 - 短"
+L["csgo_m4_tube_retract.compactname"] = ARC9:GetPhrase("csgo_stock_tube_retracted.compactname") or "缓冲 (小)"
+
+L["csgo_negev_stock_skeleton.printname"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.printname") or "镂空枪托"
+L["csgo_negev_stock_skeleton.compactname"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.compactname") or "镂空枪托"
+L["csgo_negev_stock_skeleton.description"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.description") or "轻型镂空枪托."
+
+L["csgo_ssg08_sight_iron.printname"] = ARC9:GetPhrase("csgo_awp_sight_iron.printname") or "铁瞄准镜"
+L["csgo_ssg08_sight_iron.compactname"] = ARC9:GetPhrase("csgo_awp_sight_iron.compactname") or "铁瞄准镜"
+L["csgo_ssg08_sight_iron.description"] = ARC9:GetPhrase("csgo_awp_sight_iron.description") or "售后铁瞄准镜."
+
+L["csgo_m249_barrel_long.printname"] = ARC9:GetPhrase("csgo_galilar_barrel_long.printname") or "SAW 枪管"
+L["csgo_m249_barrel_long.compactname"] = ARC9:GetPhrase("csgo_galilar_barrel_long.compactname") or "SAW"
+
+L["csgo_scar20_mag_20_auto.printname"] = ARC9:GetPhrase("csgo_g3_mag_20_auto.printname") or "20-Round 7.62×51mm 弹匣 [<color=100,175,100>自动</color>]"
+L["csgo_scar20_mag_20_auto.compactname"] = ARC9:GetPhrase("csgo_g3_mag_20_auto.compactname") or "7.62mm A"
+L["csgo_scar20_mag_20_auto.description"] = ARC9:GetPhrase("csgo_g3_mag_20_auto.description") or "将开火模式更改为 <color=100,255,100>全自动</color>."
+
+L["csgo_scar20_mag_30_auto.printname"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.printname") or "30-Round 7.62×51mm 弹匣 [<color=100,175,100>自动</color>]"
+L["csgo_scar20_mag_30_auto.compactname"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.compactname") or "7.62mm+ A"
+L["csgo_scar20_mag_30_auto.description"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.description") or "将开火模式更改为 <color=100,255,100>全自动</color>.\n" .. string.format(quicktext.bigmag, 30)
+
+L["csgo_sawedoff_stock_m3.printname"] = ARC9:GetPhrase("csgo_nova_stock_m3.printname") or "聚合枪托与手枪握把"
+L["csgo_sawedoff_stock_m3.compactname"] = ARC9:GetPhrase("csgo_nova_stock_m3.compactname") or "Polymer"
+L["csgo_sawedoff_stock_m3.description"] = ARC9:GetPhrase("csgo_nova_stock_m3.description") or "M3 的默认枪托和手枪握把."
+
+L["csgo_sawedoff_stock_xm1014.printname"] = ARC9:GetPhrase("csgo_nova_stock_xm1014.printname") or "可调节枪托与手枪握把"
+L["csgo_sawedoff_stock_xm1014.compactname"] = ARC9:GetPhrase("csgo_nova_stock_xm1014.compactname") or "可调节"
+L["csgo_sawedoff_stock_xm1014.description"] = ARC9:GetPhrase("csgo_nova_stock_xm1014.description") or "XM1014 的默认枪托和手枪握把."
+
+L["csgo_p250_mag_20.printname"] = ARC9:GetPhrase("csgo_p2000_mag_20.printname") or "20-Round 9×19mm 弹匣"
+L["csgo_p250_mag_20.compactname"] = ARC9:GetPhrase("csgo_p2000_mag_20.compactname") or "9mm+"
+L["csgo_p250_mag_20.description"] = ARC9:GetPhrase("csgo_p2000_mag_20.description") or string.format(quicktext.bigmag, 20)
+
+/////////////////// 双持-wielded Attachments
+L["csgo_dual_mp9_barrel_long.printname"] = ARC9:GetPhrase("csgo_mp9_barrel_long.printname") or "长枪管"
+L["csgo_dual_mp9_barrel_long.compactname"] = ARC9:GetPhrase("csgo_mp9_barrel_long.compactname") or "长枪管"
+L["csgo_dual_mp9_barrel_long.description"] = ARC9:GetPhrase("csgo_mp9_barrel_long.description") or "稍长的枪管."
+
+L["csgo_dual_mp9_barrel_short.printname"] = ARC9:GetPhrase("csgo_mp9_barrel_short.printname") or "ATF 枪管"
+L["csgo_dual_mp9_barrel_short.compactname"] = ARC9:GetPhrase("csgo_mp9_barrel_short.compactname") or "ATF"
+L["csgo_dual_mp9_barrel_short.description"] = ARC9:GetPhrase("csgo_mp9_barrel_short.description") or "更短的枪管."
+
+L["csgo_dual_mp9_mag_short.printname"] = ARC9:GetPhrase("csgo_mp9_mag_short.printname") or "20-Round 9×19mm 弹匣"
+L["csgo_dual_mp9_mag_short.compactname"] = ARC9:GetPhrase("csgo_mp9_mag_short.compactname") or "9mm-"
+L["csgo_dual_mp9_mag_short.description"] = ARC9:GetPhrase("csgo_mp9_mag_short.description") or string.format(quicktext.smallmag, 20)
+
+L["csgo_dual_mp9_mag_long.printname"] = ARC9:GetPhrase("csgo_mp9_mag_long.printname") or "40-Round 9×19mm 弹匣"
+L["csgo_dual_mp9_mag_long.compactname"] = ARC9:GetPhrase("csgo_mp9_mag_long.compactname") or "9mm+"
+L["csgo_dual_mp9_mag_long.description"] = ARC9:GetPhrase("csgo_mp9_mag_long.description") or string.format(quicktext.bigmag, 40)
+
+L["csgo_dual_cz_slide_long.printname"] = ARC9:GetPhrase("csgo_cz_slide_long.printname") or "CZ-L 滑轨和枪管"
+L["csgo_dual_cz_slide_long.compactname"] = ARC9:GetPhrase("csgo_cz_slide_long.compactname") or "CZ-L"
+L["csgo_dual_cz_slide_long.description"] = ARC9:GetPhrase("csgo_cz_slide_long.description") or "略长的滑轨和枪管，去掉内置枪口制动器."
+
+L["csgo_dual_cz_slide_short.printname"] = ARC9:GetPhrase("csgo_cz_slide_short.printname") or "CZ-C 滑轨和枪管"
+L["csgo_dual_cz_slide_short.compactname"] = ARC9:GetPhrase("csgo_cz_slide_short.compactname") or "CZ-C"
+L["csgo_dual_cz_slide_short.description"] = ARC9:GetPhrase("csgo_cz_slide_short.description") or "现有最短的滑轨和枪管."
+
+L["csgo_dual_cz_mag_ext.printname"] = ARC9:GetPhrase("csgo_cz_mag_ext.printname") or "18-Round 9×19mm 弹匣"
+L["csgo_dual_cz_mag_ext.compactname"] = ARC9:GetPhrase("csgo_cz_mag_ext.compactname") or "9mm+"
+L["csgo_dual_cz_mag_ext.description"] = ARC9:GetPhrase("csgo_cz_mag_ext.description") or string.format(quicktext.bigmag, 18)
+
+L["csgo_dual_deagle_barrel.printname"] = ARC9:GetPhrase("csgo_deagle_barrel.printname") or "长枪管"
+L["csgo_dual_deagle_barrel.compactname"] = ARC9:GetPhrase("csgo_deagle_barrel.compactname") or "长枪管"
+L["csgo_dual_deagle_barrel.description"] = ARC9:GetPhrase("csgo_deagle_barrel.description") or "工厂制造的长枪管."
+
+L["csgo_dual_deagle_mag_extend.printname"] = ARC9:GetPhrase("csgo_deagle_mag_extend.printname") or "15-Round .50 Action Express 弹匣"
+L["csgo_dual_deagle_mag_extend.compactname"] = ARC9:GetPhrase("csgo_deagle_mag_extend.compactname") or ".50 AE+"
+L["csgo_dual_deagle_mag_extend.description"] = ARC9:GetPhrase("csgo_deagle_mag_extend.description") or string.format(quicktext.bigmag, 15)
+
+L["csgo_dual_five_slide_long.printname"] = ARC9:GetPhrase("csgo_five_slide_long.printname") or "加长的滑轨和枪管"
+L["csgo_dual_five_slide_long.compactname"] = ARC9:GetPhrase("csgo_five_slide_long.compactname") or "Plus"
+L["csgo_dual_five_slide_long.description"] = ARC9:GetPhrase("csgo_elite_slide_long.description") or "更长的滑轨和枪管."
+
+L["csgo_dual_five_slide_short.printname"] = ARC9:GetPhrase("csgo_five_slide_short.printname") or "FN 滑轨和枪管"
+L["csgo_dual_five_slide_short.compactname"] = ARC9:GetPhrase("csgo_five_slide_short.compactname") or "FN"
+L["csgo_dual_five_slide_short.description"] = ARC9:GetPhrase("csgo_elite_slide_short.description") or "缩短的滑轨和枪管."
+
+L["csgo_dual_five_mag_30.printname"] = ARC9:GetPhrase("csgo_five_mag_30.printname") or "30-Round 5.7×28mm 弹匣"
+L["csgo_dual_five_mag_30.compactname"] = ARC9:GetPhrase("csgo_five_mag_30.compactname") or "5.7mm+"
+L["csgo_dual_five_mag_30.description"] = ARC9:GetPhrase("csgo_five_mag_30.description") or string.format(quicktext.bigmag, 30)
+
+L["csgo_dual_glock_slide_long.printname"] = ARC9:GetPhrase("csgo_glock_slide_long.printname") or "扩展的滑轨和枪管"
+L["csgo_dual_glock_slide_long.compactname"] = ARC9:GetPhrase("csgo_glock_slide_long.compactname") or "扩展"
+L["csgo_dual_glock_slide_long.description"] = ARC9:GetPhrase("csgo_glock_slide_long.description") or "扩展枪管."
+
+L["csgo_dual_glock_mag_32.printname"] = ARC9:GetPhrase("csgo_glock_mag_32.printname") or "32-Round 9×19mm 弹匣"
+L["csgo_dual_glock_mag_32.compactname"] = ARC9:GetPhrase("csgo_glock_mag_32.compactname") or "9mm+"
+L["csgo_dual_glock_mag_32.description"] = ARC9:GetPhrase("csgo_glock_mag_32.description") or string.format(quicktext.bigmag, 32)
+
+L["csgo_dual_p2000_slide_long.printname"] = ARC9:GetPhrase("csgo_p2000_slide_long.printname") or "P2000-L 滑轨和枪管"
+L["csgo_dual_p2000_slide_long.compactname"] = ARC9:GetPhrase("csgo_p2000_slide_long.compactname") or "L"
+L["csgo_dual_p2000_slide_long.description"] = ARC9:GetPhrase("csgo_p2000_slide_long.description") or "扩展的滑轨和枪管."
+
+L["csgo_dual_p2000_mag_20.printname"] = ARC9:GetPhrase("csgo_p2000_mag_20.printname") or "20-Round 9×19mm 弹匣"
+L["csgo_dual_p2000_mag_20.compactname"] = ARC9:GetPhrase("csgo_p2000_mag_20.compactname") or "9mm+"
+L["csgo_dual_p2000_mag_20.description"] = ARC9:GetPhrase("csgo_p2000_mag_20.description") or string.format(quicktext.bigmag, 20)
+
+L["csgo_dual_p250_slide_long.printname"] = ARC9:GetPhrase("csgo_p250_slide_long.printname") or "完整尺寸滑轨"
+L["csgo_dual_p250_slide_long.compactname"] = ARC9:GetPhrase("csgo_p250_slide_long.compactname") or "完整尺寸滑轨"
+L["csgo_dual_p250_slide_long.description"] = ARC9:GetPhrase("csgo_p250_slide_long.description") or "更长的滑轨和枪管."
+
+L["csgo_dual_p250_slide_short.printname"] = ARC9:GetPhrase("csgo_p250_slide_short.printname") or "超小型框架"
+L["csgo_dual_p250_slide_short.compactname"] = ARC9:GetPhrase("csgo_p250_slide_short.compactname") or "Sub"
+L["csgo_dual_p250_slide_short.description"] = ARC9:GetPhrase("csgo_p250_slide_short.description") or "缩短滑膛、枪管和手枪握把的长度."
+
+L["csgo_dual_p250_mag_20.printname"] = ARC9:GetPhrase("csgo_p2000_mag_20.printname") or "20-Round 9×19mm 弹匣"
+L["csgo_dual_p250_mag_20.compactname"] = ARC9:GetPhrase("csgo_p2000_mag_20.compactname") or "9mm+"
+L["csgo_dual_p250_mag_20.description"] = ARC9:GetPhrase("csgo_p2000_mag_20.description") or string.format(quicktext.bigmag, 20)
+
+L["csgo_dual_usp_slide_long.printname"] = ARC9:GetPhrase("csgo_usp_slide_long.printname") or "精英 滑轨和枪管"
+L["csgo_dual_usp_slide_long.compactname"] = ARC9:GetPhrase("csgo_usp_slide_long.compactname") or "精英"
+L["csgo_dual_usp_slide_long.description"] = ARC9:GetPhrase("csgo_usp_slide_long.description") or "扩展的滑轨和枪管."
+
+L["csgo_dual_usp_mag_18.printname"] = ARC9:GetPhrase("csgo_usp_mag_18.printname") or "18-Round .45 ACP 弹匣"
+L["csgo_dual_usp_mag_18.compactname"] = ARC9:GetPhrase("csgo_usp_mag_18.compactname") or ".45 ACP+"
+L["csgo_dual_usp_mag_18.description"] = ARC9:GetPhrase("csgo_usp_mag_18.description") or string.format(quicktext.bigmag, 18)
+
+L["csgo_dual_elite_slide_long.printname"] = ARC9:GetPhrase("csgo_elite_slide_long.printname") or "长滑轨和枪管"
+L["csgo_dual_elite_slide_long.compactname"] = ARC9:GetPhrase("csgo_elite_slide_long.compactname") or "L"
+L["csgo_dual_elite_slide_long.description"] = ARC9:GetPhrase("csgo_elite_slide_long.description") or "更长的滑轨和枪管."
+
+L["csgo_dual_elite_slide_short.printname"] = ARC9:GetPhrase("csgo_elite_slide_short.printname") or "短滑轨和枪管"
+L["csgo_dual_elite_slide_short.compactname"] = ARC9:GetPhrase("csgo_elite_slide_short.compactname") or "G"
+L["csgo_dual_elite_slide_short.description"] = ARC9:GetPhrase("csgo_elite_slide_short.description") or "缩短的滑轨和枪管."
+
+L["csgo_dual_elite_slide_raffica.printname"] = ARC9:GetPhrase("csgo_elite_slide_raffica.printname") or "拉菲卡改装"
+L["csgo_dual_elite_slide_raffica.compactname"] = ARC9:GetPhrase("csgo_elite_slide_raffica.compactname") or "拉菲卡"
+
+L["csgo_dual_elite_mag_24.printname"] = ARC9:GetPhrase("csgo_elite_mag_24.printname") or "24-Round 9×19mm 弹匣"
+L["csgo_dual_elite_mag_24.compactname"] = ARC9:GetPhrase("csgo_elite_mag_24.compactname") or "9mm+"
+L["csgo_dual_elite_mag_24.description"] = ARC9:GetPhrase("csgo_elite_mag_24.description") or string.format(quicktext.bigmag, 24)
